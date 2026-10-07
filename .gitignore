@@ -1,0 +1,14 @@
+# données brutes : re-téléchargées à chaque mise à jour (mises en cache par GitHub Actions)
+data/raw/
+data/trials.json
+data/trials_n.json
+data/phrc_all.json
+# fichiers de travail
+app/nephro-essais.html
+app/template_v2_bordeaux.html
+app/logo-sfndt.jpg
+*.pyc
+__pycache__/
+.DS_Store
+~$*
+PHRC_nephro_*_rapprochement.xlsx

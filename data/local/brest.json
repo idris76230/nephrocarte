@@ -1,0 +1,607 @@
+{
+ "source": "CHU de Brest — URC de néphrologie / CRMR maladies rénales rares",
+ "source_url": "https://nephrogenetique.chu-brest.fr/unite-de-recherche-clinique-de-nephrologie/les-projets-de-recherche-en-cours",
+ "centre": {
+  "f": "CHU de Brest — Néphrologie (URC de néphrologie)",
+  "v": "Brest",
+  "p": "FR",
+  "z": "29200",
+  "k": [
+   {
+    "n": "Secrétariat de néphrologie",
+    "r": "CONTACT",
+    "t": "02 98 34 70 58"
+   }
+  ]
+ },
+ "projects": [
+  {
+   "ac": "PHARE",
+   "sp": "CHU de Brest",
+   "pres": "Repérage et phénotypage des maladies rénales rares à partir des comptes rendus médicaux en utilisant le Traitement Automatique des Langues",
+   "pop": "Patients vus en consultation ou hospitalisés dans le service de néphrologie du CHU de Brest",
+   "obj": "L’objectif principal du projet est d'identifier les patients porteurs de maladies rénales rares à partir des dossiers médicaux des patients du service de néphrologie.",
+   "fin": "Fonds propres du centre de référence",
+   "eth": "Avis favorable du 17/11/2025 référence B2025CE.52 / 29BRC25.0250",
+   "nct": "",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-interne/phare",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "obs": true,
+   "intra": true
+  },
+  {
+   "ac": "RENOIR",
+   "sp": "CHU de Brest",
+   "pres": "Registre des néphropathies d’origine Indéterminée du grand Ouest",
+   "pop": "Patients ayant une maladie rénale chronique avec une néphropathie d’origine indéterminée",
+   "obj": "Évaluer la prévalence des néphropathies d’origine indéterminée (NOI) chez les patients ayant une maladie rénale chronique (MRC) de stade 4/5 (incluant patients porteurs d’un greffon rénal)",
+   "fin": "Non",
+   "nct": "",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-interne/renoir",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "obs": true,
+   "intra": true
+  },
+  {
+   "ac": "TSAR",
+   "sp": "CHU de Brest",
+   "pres": "Présentation clinique et évolution rénale des scléroses tubéreuses de Bourneville et/ou angiomyolipomes rénaux sur la grande région Ouest",
+   "pop": "Patients porteurs d’une sclérose tubéreuse de Bourneville et/ou angiomyolipomes rénaux",
+   "obj": "Etudier les facteurs (cliniques, les éléments liés à la prise en charge et les facteurs génétiques) influençant l’évolution rénale des patients présentant une sclérose tubéreuse de Bourneville et/ou un angiomyolipome",
+   "fin": "Fonds propre",
+   "reg": "NCT02887781",
+   "nct": "NCT02887781",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-interne/tsar",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "obs": false,
+   "intra": true
+  },
+  {
+   "ac": "BaxDuo-Arctic",
+   "sp": "AstraZeneca",
+   "pres": "Etude de Phase III, randomisée, en double aveugle, contrôlée, évaluant l’efficacité, la sécurité d’emploi et la tolérance du baxdrostat en association avec la dapagliflozine, comparé à la dapagliflozine seule, sur la progression de la maladie rénale chronique (MRC), chez des patients présentant une MRC et une hypertension artérielle",
+   "pop": "Patients atteints d’une maladie rénale chronique, présentant une albuminurie et une hypertension artérielle modérée",
+   "obj": "Déterminer si l’association baxdrostat/dapagliflozine est plus efficace que la dapagliflozine seule pour réduire la progression de la MRC évalué sur la variation du DFG.",
+   "reg": "NCT06268873",
+   "nct": "NCT06268873",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/hors-maladies-rares/baxduo-arctic",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "BaxDuo-Pacific",
+   "sp": "AstraZeneca",
+   "pres": "Étude de phase III, randomisée, en double aveugle, contrôlée par placebo, axée sur les événements, visant à évaluer l’efficacité, la sécurité et la tolérance du Baxdrostat en association avec la dapagliflozine par rapport à la dapagliflozine seule sur les résultats rénaux et la mortalité cardiovasculaire chez des participants atteints d’insuffisance rénale chronique et d’hypertension artérielle",
+   "pop": "Patients atteints d’une maladie rénale chronique, présentant une albuminurie et une hypertension artérielle modérée",
+   "obj": "Déterminer si l'association baxdrostat/dapagliflozine est plus efficace que le placebo/dapagliflozine pour réduire le risque lié au critère d'évaluation composite comprenant une baisse soutenue d'au moins 50 % du DFG estimé, une insuffisance rénale, des événements d'insuffisance cardiaque (IC) ou un décès d'origine cardiovasculaire.",
+   "reg": "NCT06742723",
+   "nct": "NCT06742723",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/hors-maladies-rares/baxduo-pacific",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "THINK",
+   "sp": "CHU de Tours",
+   "pres": "Intensification des traitements antihypertenseurs à base de diurétiques par rapport à la prise en charge habituelle de l'hypertension non contrôlée chez les patients atteints de maladie rénale chronique modérée à sévère : un essai en ouvert, contrôlé randomisé en cluster, de phase 3",
+   "pop": "Patients atteints d’une maladie rénale chronique avancée ou modérée, d’une hypertension artérielle non contrôlée par un traitement en cours à la posologie maximale tolérée.",
+   "obj": "Evaluer l’efficacité d’un algorithme basé sur les agents diurétiques chez les patients atteints de MRC modérée à sévère et d’HTA non contrôlée en réduisant l’incidence de l’lRT, la progression de la MRC, les évènements cardiovasculaires et la mortalité.",
+   "reg": "NCT05732727",
+   "nct": "NCT05732727",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/hors-maladies-rares/think",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "TRACK",
+   "sp": "The George Institute et CHU de Nancy",
+   "pres": "Traitement des maladies cardiovasculaires par Rivaroxaban à faible dose dans la maladie rénale chronique avancée",
+   "pop": "Patients porteurs d’une maladie rénale chronique de stade 4 ou 5 ou sous traitement de suppléance, avec risque cardiovasculaire élevé",
+   "obj": "Vérifier l'hypothèse selon laquelle, comparativement au placebo, le Rivaroxaban à faible dose réduit considérablement le risque d'événements cardiovasculaires majeurs chez les personnes présentant un risque cardiovasculaire ou thrombotique élevé aux stades 4 ou 5 de l'insuffisance rénale chronique y compris celles qui reçoivent une dialyse.",
+   "reg": "NCT03969953",
+   "nct": "NCT03969953",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/hors-maladies-rares/track",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "BEL-AMR",
+   "sp": "CHU de Rouen",
+   "pres": "Dépistage du rejet humoral infraclinique et efficacité du belatacept devant un DSA de novo sans dysfonction d’organe après greffe rénale",
+   "pop": "Patients transplantés rénaux",
+   "obj": "Démontrer, 12 mois après la biopsie, l'efficacité du belatacept combiné au traitement standard (SOC), comparé au tacrolimus combiné au traitement standard (SOC), chez les receveurs d’une greffe rénale présentant un rejet humoral infraclinique actif détecté lors de la biopsie initiale pour diagnostiquer les anticorps spécifiques du donneur de novo (dnDSA)",
+   "reg": "NCT06291103",
+   "nct": "NCT06291103",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/greffe-renale/bel-amr",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "INSTEAD",
+   "sp": "CHU de Tours",
+   "pres": "Etude de l’efficacité du sérum anti-lymphocytaire de lapin versus le basiliximab chez les patients transplantés rénaux immunisés sans DSA prégreffe : essai randomisé multicentrique",
+   "pop": "Patients transplantés rénaux",
+   "obj": "Démontrer que le rATG est plus efficace que le basiliximab pour prévenir le rejet aigu prouvé par biopsie (BPAR) au cours de la première année post-transplantation chez les transplantés rénaux immunisés sans DSA (anticorps anti-HLA spécifiques contre le donneur) prégreffe.",
+   "reg": "NCT05385432",
+   "nct": "NCT05385432",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/greffe-renale/instead",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "PRODIG",
+   "sp": "CHU de Besançon",
+   "pres": "Prévention du diabète de novo après transplantation par un traitement court par vildagliptine dans la période précoce post-transplantation rénale.",
+   "pop": "Patients considérés à haut risque de développer un diabète post-transplantation rénale",
+   "obj": "Déterminer dans quelle mesure un traitement de courte durée par GALVUS (vildagliptine) en post transplantation préviendrait l’apparition d’un diabète dans la 1ère année post greffe.",
+   "reg": "NCT02849899",
+   "nct": "NCT02849899",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/greffe-renale/prodig",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "REPLY",
+   "sp": "Hôpitaux Universitaires de Strasbourg",
+   "pres": "Étude multicentrique, randomisée à deux bras, évaluant l'efficacité du rituximab prophylactique chez les transplantés rénaux adultes EBV négatifs sur l'incidence de la primo-infection EBV et des troubles lymphoprolifératifs post-transplantation (LPT).",
+   "pop": "Patients séronégatifs à EBV (Epstein Barr virus) transplantés rénaux avec un donneur EBV positif",
+   "obj": "Evaluer l’efficacité d’une perfusion précoce de Rituximab dans la prévention de la primo-infection EBV et du LPT chez le patient adulte EBV séronégatif transplanté avec un donneur EBV séropositif",
+   "reg": "NCT04989491",
+   "nct": "NCT04989491",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/greffe-renale/reply",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "COMPLIK",
+   "sp": "CHU de Brest",
+   "pres": "Etude et prise en charge des complications kystiques dans la polykystose hépato-rénale autosomique dominante",
+   "pop": "Patients porteurs d’une polykystose autosomique dominante hépato-rénale et inclus dans Genkyst, qui présentent au moins une complication kystique.",
+   "obj": "Améliorer les connaissances de l’épidémiologie des complications kystiques au sein du réseau Genkyst.",
+   "fin": "GIRCI - appel à projet réseau labellisé",
+   "reg": "NCT06036992",
+   "nct": "NCT06036992",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-interne/polykystose-renale-promotion-interne/complik",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": true
+  },
+  {
+   "ac": "GENKYST",
+   "sp": "CHU de Brest",
+   "pres": "Analyse des facteurs cliniques et génétiques influençant l’évolution et la réponse au traitement de la polykystose rénale autosomique dominante",
+   "pop": "Tous les patients porteurs d’une polykystose quel qu’en soit le stade (asymptomatique, insuffisant rénal, dialysé ou transplanté) et ayant délivré un consentement de participation libre, éclairé",
+   "obj": "Etablir un registre breton de la polykystose rénale dominante et déterminer la prévalence de la PKAD dans les 5 départements, son évolution au cours du temps, la distribution géographique des mutations.",
+   "fin": "PHRCI",
+   "reg": "NCT02887729",
+   "nct": "NCT02887729",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-interne/polykystose-renale-promotion-interne/genkyst",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": true,
+   "intra": true
+  },
+  {
+   "ac": "GIVA-PLD",
+   "sp": "CHU de Brest",
+   "pres": "Variabilité génétique des Polykystoses Hépatiques",
+   "pop": "Patients atteints de polykystose hépatique",
+   "obj": "Décrire l’épidémiologie, la variabilité clinique et la variabilité génétique de la PKH au sein de la région Grand Ouest.",
+   "fin": "Innoveo",
+   "reg": "",
+   "nct": "",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-interne/polykystose-renale-promotion-interne/giva-pld",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": true
+  },
+  {
+   "ac": "aSHU",
+   "sp": "Alexion",
+   "pres": "Étude observationnelle, non interventionnelle, multicentrique et multinationale de patients atteints du syndrome hémolytique et urémique atypique (registre aSHU).",
+   "pop": "Patients atteints du syndrome hémolytique et urémique atypique",
+   "obj": "Recueillir et évaluer les données de sécurité et d'efficacité spécifiques à l'utilisation de l'éculizumab chez les patients atteints du SHU atypique.",
+   "reg": "NCT01522183",
+   "nct": "NCT01522183",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/ashu",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "MAT / SHU"
+   ],
+   "obs": true,
+   "intra": false
+  },
+  {
+   "ac": "COMSIGN",
+   "sp": "Assistance Publique - Hôpitaux de Paris",
+   "pres": "Suivi de cohorte des patients atteints de Glomérulopathie à dépôts de C3 (GC3) sur rein natif : Etude longitudinale sur la signature clinique, histologique et immunologique de l’activation du complément",
+   "pop": "Ensemble des patients dont l’analyse histologique rénale répondra aux critères diagnostiques en immunofluorescence de la glomérulopathie à dépôts de C3, selon les recommandations internationales KDIGO actuelles (2019).",
+   "obj": "Décrire la présentation, la prise en charge thérapeutique, les comorbidités et les profils évolutifs des patients atteints de GC3 à partir de l’analyse des données cliniques, évolutives, biologiques et immunologiques, issues d’une cohorte nombreuse de patients.",
+   "reg": "A venir",
+   "nct": "",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/comsign",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulopathie à C3"
+   ],
+   "obs": true,
+   "intra": false
+  },
+  {
+   "ac": "DAILY-LUMA",
+   "sp": "Hospices Civils de Lyon",
+   "pres": "Etude rétro-prospective sur données de patients porteurs d’une hyperoxalurie primitive de type 1 traités par Lumisaran",
+   "pop": "Patients porteurs d’une hyperoxalurie primitive de type 1 traités par Lumisaran",
+   "obj": "Surveiller l'évolution de la maladie et particulièrement l'oxalurie avant et après traitement.",
+   "reg": "NCT06225882",
+   "nct": "NCT06225882",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/daily-luma",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Hyperoxalurie"
+   ],
+   "obs": true,
+   "intra": false
+  },
+  {
+   "ac": "ICAN",
+   "sp": "Alexion",
+   "pres": "Étude de phase 3, randomisée, en double aveugle contrôlée par placebo, visant à évaluer l’efficacité et la sécurité d’emploi du ravulizumab chez les participants adultes atteints de néphropathie à immunoglobulines A (IgAN)",
+   "pop": "Patients avec un diagnostic de néphropathie à IgA prouvé par biopsie",
+   "obj": "Déterminer dans quelle mesure le ravulizumab réduit la protéinurie et le déclin de la fonction rénale chez des adultes atteints de néphropathie à IgA.",
+   "reg": "NCT06291376",
+   "nct": "NCT06291376",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/ican",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "IHMN",
+   "sp": "CHU de Nice",
+   "pres": "Analyse immunopathologique d’une cohorte nationale française de Glomérulonéphrite Extra-Membraneuse",
+   "pop": "Patients porteurs d’une Glomérulonéphrite Extra-Membraneuse",
+   "obj": "Recenser le plus de cas de GEM afin de décrire leur présentation clinique, la fréquence de l’activité anti-PLA2R1 et anti-THSD7A dans les formes idiopathiques et secondaires et l’évolution sous traitement à un an (persistance du syndrome néphrotique, rémission partielle ou complète).",
+   "reg": "NCT04326218",
+   "nct": "NCT04326218",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/ihmn",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulonéphrite extramembraneuse"
+   ],
+   "obs": true,
+   "intra": false
+  },
+  {
+   "ac": "OBILUP",
+   "sp": "Assistance Publique-Hôpitaux de Paris",
+   "pres": "Traitement d'induction de la néphropathie lupique sans adjonction de corticostéroïdes oraux: Essai contrôlé multicentrique randomisé en ouvert comparant corticostéroïdes oraux et mycophénolate mofétil (MMF) au obinutuzumab et MMF",
+   "pop": "Patients atteints d’une néphrite lupique",
+   "obj": "Démontrer qu’un traitement sans corticoïdes oraux mais avec du l'obinutuzumab (et du MMF) est non inférieur à un traitement à base de corticostéroïdes oraux et du MMF pour atteindre l’objectif principal de la réponse rénale complète à la semaine 52 sans recevoir de corticostéroïdes au-dessus d’une dose prédéfinie",
+   "reg": "NCT04702256",
+   "nct": "NCT04702256",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/obilup",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie lupique"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "Podomount (1434-0017)",
+   "sp": "Boehringer Ingelheim",
+   "pres": "Essai multicentrique de phase 3, randomisé, en double aveugle, à groupes parallèles et contrôlé par placebo visant à évaluer les effets de l'inhibiteur oral de TRPC6 BI 764198 administré pendant une période de traitement de 104 semaines chez des participants adultes et adolescents atteints de glomérulosclérose segmentaire et focale (GSF) primaire ou de GSF d'origine génétique liée à des variants du gène TRPC6",
+   "pop": "A dultes et adolescents atteints de glomérulosclérose segmentaire et focale primaire (pFSGS) ou de GSF d'origine génétique liée à des variants du gène TRPC6",
+   "obj": "Cette étude vise à déterminer si le BI 764198 aide les adultes et les adolescent(e)s atteint(e)s de GSF lorsqu’il est administré en plus du traitement standard. L’étude mesure la quantité de protéines dans l’urine des participant(e)s, car une augmentation des protéines dans l’urine peut être un signe de stress pour les reins.",
+   "reg": "NCT07220083",
+   "nct": "NCT07220083",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/autre-pathlogies/podomount-1434-0017",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "ANCHOR M25-14",
+   "sp": "Calico",
+   "pres": "Etude de phase 2, multicentrique, randomisée, en double aveugle, contrôlée par placebo visant à évaluer la sécurité et l’efficacité de l'ABBV-CLS-628 chez des patients adultes présentant une polykystose rénale autosomique dominante (PKRAD).",
+   "pop": "Personnes âgés de 18 à 55 ans atteints de PKRAD de classification Mayo 1C, 1D ou 1E",
+   "obj": "évaluer la sécurité et l’efficacité du traitement",
+   "reg": "NCT06902558",
+   "nct": "NCT06902558",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/polykystose-renale-promotion-externe/anchor-m25-147",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "HYDROPROTECT",
+   "sp": "Centre médical universitaire de Groningen, Pays-Bas",
+   "pres": "Essai clinique randomisé, multicentrique, en double aveugle, contrôlé contre placebo",
+   "pop": "Patients porteurs d’une polykystose rénale autosomique dominante (PKRAD), traités par Tolvaptan.",
+   "obj": "Examiner l'effet à long terme du co-traitement avec l'hydrochlorothiazide sur l'efficacité du Tolvaptan (taux de déclin de la fonction rénale) et la tolérance (effet aquarétique et qualité de vie) chez les patients atteints de PKRAD",
+   "reg": "NCT05373264",
+   "nct": "NCT05373264",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/polykystose-renale-promotion-externe/hydroprotect",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "MAPLE GSK4771261",
+   "sp": "GlaxoSmithKline",
+   "pres": "Étude de phase 1b pour évaluer la sécurité, la tolérance, la pharmacocinétique et la pharmacodynamie du traitement « GSK4771261 » (anticorps monoclonal) chez des participants atteints de polykystose rénale autosomique dominante",
+   "pop": "Patients adultes atteints de polykystose rénale autosomique dominante ayant un DFG >60 ml/min/1.73m² et ne recevant pas de Tolvaptan",
+   "obj": "Evaluer la sécurité, la tolérance, la pharmacocinétique et la pharmacodynamie du traitement",
+   "reg": "NCT06734234",
+   "nct": "NCT06734234",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/polykystose-renale-promotion-externe/maple-gsk4771261",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "VX24-407-101 (Aglow)",
+   "sp": "Vertex Pharmaceuticals Incorporated",
+   "pres": "Etude de phase 2a, en ouvert, à un bras, évaluant l’efficacité, la sécurité et la pharmacocinétique du traitement VX-407 chez les personnes porteuses de polykystose rénale autosomique dominante avec variant de PKD1 .",
+   "pop": "Personnes porteuses de polykystose rénale autosomique dominante avec variant de PKD1 , de classification Mayo 1B à 1E, avec DFG ≥ à 25 mL/min/1.73m²",
+   "obj": "Evaluation de l’évolution du volume rénal total ajusté à l’âge.",
+   "reg": "NCT07161037",
+   "nct": "NCT07161037",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/polykystose-renale-promotion-externe/vx24-407-101-aglow",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "VX24-KDO-901 VERTEX (Aperture)",
+   "sp": "Vertex",
+   "pres": "Etude visant à déterminer la prévalence et les caractéristiques cliniques associées aux groupes de variants du gène PKD1 dans la polykystose rénale autosomique dominante (PKRAD)",
+   "pop": "Patients porteurs d’une PKRAD n’ayant pas recours à un traitement de suppléance",
+   "obj": "Estimer la prévalence des variants PKD1 chez les patients PKRAD et décrire la démographie et les caractéristiques cliniques des patients porteurs de certains variants PKD1.",
+   "reg": "NCT06747572",
+   "nct": "NCT06747572",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/polykystose-renale-promotion-externe/vx24-kdo-901-aperture",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "BNDMR",
+   "long": "Banque Nationale de Données Maladies Rares",
+   "sp": "Projet dans le cadre du Plan National Maladies Rares du Ministère de la Santé",
+   "pres": "La BNDMR vise à doter la France d’une collection homogène de données sur la base d’un set de données minimal (SDM) pour documenter la prise en charge et l’état de santé des patients atteints de maladies rares dans les centres experts français, et de mieux évaluer l’effet des plans nationaux. Les données sont stockées après suppression des noms et prénoms dans la BNDMR de manière sécurisée.",
+   "pop": "Patients vus dans les centres experts. Patients vus dans un contexte de suspicion, de diagnostic, ou de suivi d’une maladie rénale rare.",
+   "obj": "Les analyses réalisées permettent de mieux caractériser les personnes atteintes de maladies rares, leur prise en charge et parcours de soin dans le réseau expert maladies rares ; d’évaluer la survenue de ces maladies dans la population ; et de ce fait favoriser la mise en œuvre de politiques de santé adaptées grâce à la production d’indicateurs pour la DGOS par exemple. Les données de santé collectées doivent également faciliter la recherche médicale en générant des nouvelles connaissances et la mise en place d’essais cliniques. La liste des études menées est consultable sur cette page . En vertu de l’article 44(3) de la Loi Informatique et Libertés, son utilisation est exclusivement restreinte à des travaux d’intérêt public se situant dans le domaine de la santé. Note d’information patients : retrouvez la note d’information relative au traitement de vos données sur cette page .",
+   "nct": "",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/registres-et-cohortes/bndmr",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "obs": true,
+   "intra": false
+  },
+  {
+   "ac": "ERKReg",
+   "long": "Registre européen des maladies rénales rares",
+   "sp": "Hôpital Universitaire de Heidelberg et Assistance Publique – Hôpitaux de Paris",
+   "pres": "ERKReg est le premier et plus grand registre européen répertoriant toutes les maladies rénales rares, conduit par ERKNet. ERKNet est le réseau de référence européen pour les maladies rénales rares.",
+   "pop": "ERKReg collecte des informations prospectives auprès de tous les patients atteints de maladies rénales rares au sein du réseau.",
+   "obj": "Le registre aide les médecins, les chercheurs et l’industrie pharmaceutique à acquérir davantage de connaissances sur les maladies rénales rares et à orienter leurs activités de recherche et de développement de médicaments de façon à améliorer la qualité de vie des patients. Le registre vise également à aider les associations de patients, les autorités sanitaires et les décideurs politiques à optimiser la prise en charge des patients atteints de maladies rénales rares. ERKReg reçoit actuellement des données de patients de plus de 70 hôpitaux dans 24 pays.",
+   "reg": "Visitez le site de ERKnet , le site du réseau de référence européen pour les maladies rénales rares.",
+   "nct": "",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/registres-et-cohortes/erkreg",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "obs": true,
+   "intra": false
+  },
+  {
+   "ac": "ASSESS",
+   "sp": "Bayer",
+   "pres": "Étude de phase IIa randomisée, en double aveugle, contrôlée par placebo, en groupes parallèles, avec une phase d'extension, visant à évaluer l'efficacité et la sécurité d'emploi du BAY 3401016 chez des participants âgés de 18 à 45 ans atteints du syndrome d'Alport",
+   "pop": "Personnes âgées de 18 à 45 ans atteintes du syndrome d'Alport",
+   "obj": "L'objectif principal de cette étude est d'en savoir plus sur l'efficacité du BAY 3401016 pour ralentir la perte de fonction rénale chez les adultes atteints d'un syndrome d’Alport à progression rapide.",
+   "reg": "NCT07211685",
+   "nct": "NCT07211685",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/syndrome-dalport/assess",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Syndrome d'Alport"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "Iptacopan et vascularites à ANCA",
+   "sp": "Novartis Pharmaceuticals",
+   "pres": "Etude de phase 2, randomisée et contrôlée, pour évaluer le LNP023 (Iptacopan) chez les patients atteints de vascularite active associée aux ANCA",
+   "pop": "Patients nouvellement diagnostiqués ou en rechute atteints de granulomatose avec polyangéite et de polyangéite microscopique, ayant un DFG > 15ml/min/1.73m² et nécessitant un traitement par rituximab et glucocorticoïdes.",
+   "obj": "Evaluer l'effet de l'Iptacopan sur le maintien de la rémission à la semaine 48 par rapport au traitement standard",
+   "reg": "NCT06388941",
+   "nct": "NCT06388941",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/vascularites-a-anca/iptacopan-et-vascularites-a-anca",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Vascularites à ANCA"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "MASTER-ANCA",
+   "sp": "CHD Vendée",
+   "pres": "Maintien ou arrêt des traitements immunosuppresseurs de la thérapie immunosuppressive chez les patients atteints de vascularite à ANCA et d’une atteinte rénale terminale : essai clinique prospectif, multicentrique, randomisé, en ouvert",
+   "pop": "patients atteints de vascularite à ANCA et d’une atteinte rénale terminale",
+   "obj": "Démontrer la supériorité de l'arrêt de l'immunosuppression chez les patients en IRT avec une vascularite à ANCA par rapport à la poursuite du traitement d’entretien immunosuppresseur en termes de survie sans événement grave à 24 mois",
+   "reg": "NCT03323476",
+   "nct": "NCT03323476",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/vascularites-a-anca/master-anca",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Vascularites à ANCA"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "RENAL-F02",
+   "sp": "Alentis Therapeutics AG",
+   "pres": "Etude randomisée de phase 2, en double aveugle, contrôlée par placebo portant sur l'administration intraveineuse d'ALE.F02, visant à évaluer la sécurité, la tolérance, la pharmacocinétique et la protection rénale dans la vascularite associée aux ANCA avec glomérulonéphrite rapidement progressive.",
+   "pop": "Personnes de plus de 18 ans atteintes de vascularite associée aux ANCA avec glomérulonéphrite rapidement progressive, avec baisse de la fonction rénale (DFG ≤50 mL/min/1.73 m2 and ≥10 mL/min/1.73 m2)",
+   "obj": "Evaluation de la sécurité et de la tolérance d'ALE.F02 lorsqu'il est administré en perfusion intraveineuse chez des patients atteints de glomérulonéphrite rapidement progressive attribuée à la vascularite associée aux ANCA.",
+   "reg": "NCT06047171",
+   "nct": "NCT06047171",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/vascularites-a-anca/renal-f02",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Vascularites à ANCA"
+   ],
+   "obs": false,
+   "intra": false
+  },
+  {
+   "ac": "RENATO",
+   "sp": "Assistance Publique-Hôpitaux de Paris",
+   "pres": "Essai randomisé visant à évaluer l'efficacité de la pioglitazone pour promouvoir une tolérance rénale à la vascularite associée aux ANCA.",
+   "pop": "Patients adultes atteints de vascularite à ANCA et présentant une atteinte rénale active prouvée par biopsie et un DFG > 15ml/min/1.73m²",
+   "obj": "démontrer une réduction des lésions rénales (reflétée par l'amélioration précoce de la protéinurie et de la créatinine sérique), dans la vascularite rénale associée aux ANCA, par un traitement complémentaire à la pioglitazone en plus du régime immunosuppresseur standard avec des glucocorticoïdes et du rituximab, après six mois.",
+   "reg": "NCT05946564",
+   "nct": "NCT05946564",
+   "url": "https://nephrogenetique.chu-brest.fr/nos-activites/promotion-externe/vascularites-a-anca/renato",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Vascularites à ANCA"
+   ],
+   "obs": false,
+   "intra": false
+  }
+ ]
+}

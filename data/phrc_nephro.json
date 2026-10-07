@@ -1,0 +1,962 @@
+[
+ {
+  "type": "PHRC-I",
+  "annee": "2017",
+  "num": "PHRCI-17-063",
+  "etab": "CHU DE TOULOUSE",
+  "porteur": "Stanislas FAGUER",
+  "acro": "C2D study",
+  "titre": "Evaluation de l’efficacité et de la tolérance d’une anticoagulation régionale des circuits de dialyse par un dialysat au citrate sans calcium",
+  "fichier": "dgos_resultats_phrc_i_2017_240718.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2024",
+  "num": "PHRC-24-0077",
+  "etab": "HOSPICES CIVILS DE LYON",
+  "porteur": "Justine BACCHETTA",
+  "acro": "CINAD",
+  "titre": "Evaluation de l’ajout du cinacalcet au traitement par alfacalcidol dans le contrôle du métabolisme minéral en dialyse pédiatrique chez l’enfant de plus de 3 ans : une étude contrôlée randomisée multicentrique.",
+  "fichier": "phrc-n24_publication_resultats_selection_xae_20260217.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2024",
+  "num": "PHRC-24-0093",
+  "etab": "CHU TOULOUSE",
+  "porteur": "Arnaud DEL BELLO",
+  "acro": "ARN",
+  "titre": "Réduire l’allo-immunisation post néphrectomie précoce du greffon",
+  "fichier": "phrc-n24_publication_resultats_selection_xae_20260217.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2024",
+  "num": "PHRC-24-0325",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Marie WERNER",
+  "acro": "TRAUM-AVP",
+  "titre": "Effet d’une supplémentation précoce par arginine-vasopressine sur l’insuffisance rénale aiguë au cours des états de choc hémorragiques traumatiques : Une étude multicentrique randomisée contrôlée contre placebo.",
+  "fichier": "phrc-n24_publication_resultats_selection_xae_20260217.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2024",
+  "num": "PHRC-24-0328",
+  "etab": "CHU DE TOURS",
+  "porteur": "Benjamin THOREAU",
+  "acro": "OPTIVAS",
+  "titre": "Traitement d’induction optimisé par Rituximab plus Méthotrexate versus Rituximab en monothérapie dans les vascularites associées aux ANCA actives : essai randomisé contrôlé de supériorité en double aveugle",
+  "fichier": "phrc-n24_publication_resultats_selection_xae_20260217.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2024",
+  "num": "PHRC-24-0347",
+  "etab": "CHU DE BORDEAUX",
+  "porteur": "Claire RIGOTHIER",
+  "acro": "HyaSpar",
+  "titre": "Évaluation de la réduction de protéinurie chez les patients adultes présentant une HYAlinose segmentaire et focale secondaire après administration de SPARsentan",
+  "fichier": "phrc-n24_publication_resultats_selection_xae_20260217.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2020",
+  "num": "PHRCI-20-048",
+  "etab": "CHU ROUEN",
+  "porteur": "Dominique BERTRAND",
+  "acro": "CYTOPREV",
+  "titre": "Efficacité d’une stratégie préventive de l’infection à cytomegalovirus immuno-guidée comparativement à une stratégie prophylactique universelle chez le transplanté rénal",
+  "fichier": "phrci_20-resultats.selection_v0_2_20221113.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2020",
+  "num": "PHRCI-20-058",
+  "etab": "HOSPICES CIVILS DE LYON",
+  "porteur": "Thomas RIMMELE",
+  "acro": "NEPHROTRAUMA",
+  "titre": "Impact d’un protocole de NEPHROprotection chez des patients TRAUMAtisés graves à risque d’insuffisance rénale aiguë : un essai contrôlé randomisé multicentrique",
+  "fichier": "phrci_20-resultats.selection_v0_2_20221113.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2021",
+  "num": "PHRCI-2021-11",
+  "etab": "AP-HP",
+  "porteur": "Antoine DURRBACH",
+  "acro": "SCARR",
+  "titre": "Cellules Stromales mésenchymateuses de Cordon ombilical Allogéniques pour le traitement du Rejet chronique humoral (cABMR) de greffe Rénale",
+  "fichier": "phrci_21-resultats_selection_v0_8_20230105.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2021",
+  "num": "PHRCI-2021-57",
+  "etab": "HOSPICES CIVILS DE LYON",
+  "porteur": "Frank BIDAR",
+  "acro": "EPIC-ECMO",
+  "titre": "Connexion parallèle ou intégrée de l’épuration extra-rénale continue chez les patients sous ECMO : un essai clinique randomisé",
+  "fichier": "phrci_21-resultats_selection_v0_8_20230105.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2021",
+  "num": "PHRCI-2021-66",
+  "etab": "HOSPICES CIVILS DE LYON",
+  "porteur": "Matthias JACQUET-LAGREZE",
+  "acro": "EarlyDRY",
+  "titre": "Stratégie de déplétion précoce guidée sur la perfusion tissulaire en épurationextrarénale continue chez les patients en insuffisance rénale aigue.",
+  "fichier": "phrci_21-resultats_selection_v0_8_20230105.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2021",
+  "num": "PHRCI-2021-87",
+  "etab": "CHRU DE NANCY",
+  "porteur": "Antoine KIMMOUN",
+  "acro": "EMPASHOCK",
+  "titre": "Effets à 3 mois de l’introduction précoce d’empagliflozine chez les patients en choc cardiogénique sur la morbimortalité, la fraction d’éjection et la fonction rénale à 3 mois. Essai randomisé en ouvert multicentrique.",
+  "fichier": "phrci_21-resultats_selection_v0_8_20230105.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2022",
+  "num": "PHRCI-2022-27",
+  "etab": "CHRU de Tours",
+  "porteur": "Charlotte SALMON GANDONNIERE",
+  "acro": "PHEDREA",
+  "titre": "clairance de la morPHinE et filtration glomérulaire chez le Drépanocytaire en crise en REAnimation",
+  "fichier": "phrci_22_resultatsselection_v0-1_20231221_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2022",
+  "num": "PHRCI-2022-71",
+  "etab": "CHU de Rouen",
+  "porteur": "Dominique GUERROT",
+  "acro": "ETERNAL-PKD",
+  "titre": "SEcurité et TolErance de la RotigotiNe chez des patients Atteints de La PolyKystose rénale autosomique Dominante",
+  "fichier": "phrci_22_resultatsselection_v0-1_20231221_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0655",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Claire DOSSIER",
+  "acro": "OBIRINS",
+  "titre": "Essai randomisé comparant l'efficacité et la tolérance de l'obinutuzumab au rituximab dans le syndrome nephrotique corticodépendant ou à rechutes fréquentes de l'enfant.",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0662",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "khalil EL KAROUI",
+  "acro": "HYPERSHU",
+  "titre": "Traitement des urgences hypertensives associées au syndrome hémolytique et urémique: étude multicentrique randomisée contrôlée.",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0695",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Jean GASCHIGNARD",
+  "acro": "PYELOCOURT",
+  "titre": "Antibiothérapie intraveineuse 3 jours vs antibiothérapie intraveineuse 3 jours avec relais oral 7 jours pour le traitement des pyélonéphrites aiguës chez les enfants âgés de 1 mois à 3 ans : un essai clinique de non-infériorité randomisé multicentrique en ouvert",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0590",
+  "etab": "CHRU DE TOURS",
+  "porteur": "Annabelle GOUMARD",
+  "acro": "INSTEAD",
+  "titre": "Etude de l’efficacité du sérum anti-lymphocytaire de lapin versus le basiliximab chez les patients transplantés rénaux immunisés sans DSA pré-greffe : essai randomisé multicentrique.",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0707",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Alexandre KARRAS",
+  "acro": "RENATO",
+  "titre": "Essai randomisé multicentrique visant à évaluer l'efficacité de la pioglitazone pour promouvoir une tolérance rénale à la vascularite associée aux ANCA",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0715",
+  "etab": "CHU MONTPELLIER",
+  "porteur": "Kada KLOUCHE",
+  "acro": "WeCan",
+  "titre": "Evaluation de 2 stratégies de sevrage de l’épuration extra-rénale chez les patients de réanimation atteints d’insuffisance rénale aigüe : essai contrôlé, randomisé, multicentrique",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0622",
+  "etab": "CHU SAINT-ETIENNE",
+  "porteur": "Nicolas MAILLARD",
+  "acro": "QUIgAN",
+  "titre": "Effet thérapeutique de l'hydroxychloroquine sur l'évolution de la néphropathie à IgA",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0821",
+  "etab": "APHM",
+  "porteur": "thomas ROBERT",
+  "acro": "PAKINAM",
+  "titre": "Efficacité et tolérance de la supplémentation en nicotinamide durant une insuffisance rénale aiguë:_x000D_ un essai randomisé en double aveugle",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0822",
+  "etab": "APHM",
+  "porteur": "thomas ROBERT",
+  "acro": "HepFreeHD",
+  "titre": "Hémodialyse chronique sans anticoagulation à l’héparine",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0641",
+  "etab": "CHRU DE TOURS",
+  "porteur": "Bénédicte SAUTENET",
+  "acro": "THINK",
+  "titre": "Intensification du traitement antihypertenseur basé sur les traitements diurétiques en comparaison à une prise en charge usuelle pour l'hypertension artérielle non contrôlée chez les patients insuffisants rénaux chroniques modérés à sévères: un essai randomisé contrôlé en cluster",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2020",
+  "num": "PHRC-20-0470",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Benjamin TERRIER",
+  "acro": "OBI-WAN",
+  "titre": "Evaluation d’un traitement par obinutuzumab chez les patients avec granulomatose avec polyangéite avec ANCA-PR3 en rechute : Etude de phase 2, prospective ouverte",
+  "fichier": "phrcn_20_resultatsselection_v2-0_20221027_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2021",
+  "num": "PHRC-21-0035",
+  "etab": "CHU DE TOURS",
+  "porteur": "Franck BRUYERE",
+  "acro": "FIRE Stones",
+  "titre": "Impact du Furosémide sur le taux de fragments résiduels après urétéroscopie souple pour destruction de calculs rénaux par laser : essai randomisé",
+  "fichier": "phrcn_21_resultatsselection_v0-2_20230210_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2021",
+  "num": "PHRC-21-0275",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "jacques DURANTEAU",
+  "acro": "AVENIR Trial",
+  "titre": "Effet d'une supplémentation à faible dose d'arginine-vasopressine sur les insuffisances rénales aiguës post-transplantation hépatique",
+  "fichier": "phrcn_21_resultatsselection_v0-2_20230210_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2021",
+  "num": "PHRC-21-0002",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Pierre FRANGE",
+  "acro": "LUCY",
+  "titre": "Essai randomisé en double aveugle comparant une bithérapie letermovir+valganciclovir à une monothérapie de valganciclovir (+placebo de letermovir) en traitement des infections à cytomegalovirus après transplantation de rein.",
+  "fichier": "phrcn_21_resultatsselection_v0-2_20230210_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2021",
+  "num": "PHRC-21-0167",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Stéphane GAUDRY",
+  "acro": "ICRAKI",
+  "titre": "Hémodialyse intermittente versus épuration extra-rénale continue pour l'insuffisance rénale aiguë sévère des patients de réanimation",
+  "fichier": "phrcn_21_resultatsselection_v0-2_20230210_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2021",
+  "num": "PHRC-21-0274",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Alexandre MEBAZAA",
+  "acro": "DAPA-ICU Trial",
+  "titre": "Dapagliflozine a visé de protection cardio-rénale à la sortie de réanimation. Étude prospective, multicentrique,_x000D_ randomisée, en double aveugle.",
+  "fichier": "phrcn_21_resultatsselection_v0-2_20230210_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0241",
+  "etab": "HOPITAL CHARLES NICOLLE CHU ROUEN",
+  "porteur": "Dominique BERTRAND",
+  "acro": "BELA-M-R",
+  "titre": "Dépistage du rejet humoral infraclinique et efficacité du belatacept devant un DSA de novo sans dysfonction d’organe après greffe rénale.",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0029",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Sébastien CZERNICHOW",
+  "acro": "SEMADIALYSE",
+  "titre": "Éfficacité et sécurité du sémaglutide chez des patients obèses dialysés",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0201",
+  "etab": "CHU DE CAEN NORMANDIE",
+  "porteur": "Maxence FICHEUX",
+  "acro": "APIDP2",
+  "titre": "Sécurité et efficacité de l’apixaban versus la warfarine dans la fibrillation atriale non valvulaire des sujets en insuffisance rénale terminale traités par dialyse péritonéale : essai clinique contrôlé randomisé",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0287",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Julien HOGAN",
+  "acro": "MoNIToR",
+  "titre": "Suivi Non-Invasif en Transplantation Rénale Pédiatrique et Personnalisation de l’immunosuppression _x000D_",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0163",
+  "etab": "CHRU RENNES",
+  "porteur": "Pauline HOUSSEL DEBRY",
+  "acro": "HALT",
+  "titre": "Impact de la perfusion d'albumine sur l'insuffisance rénale aigue après transplantation hépatique",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0198",
+  "etab": "CHU DE NICE HOPITAL DE CIMIEZ",
+  "porteur": "Barbara SEITZ-POLSKI",
+  "acro": "iRitux",
+  "titre": "Etude d'un Protocole Personnalisé de Rituximab basé sur l'Intelligence Artificielle dans la Glomérulonéphrite Extra-Membraneuse",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2022",
+  "num": "PHRC-22-0271",
+  "etab": "HOSPICES CIVILS DE LYON",
+  "porteur": "Olivier THAUNAT",
+  "acro": "TAOIST",
+  "titre": "Personnalisation de l’immunosuppression d’entretien basée sur la charge virale TTV afin de prévenir les complications au long-cours en transplantation rénale",
+  "fichier": "phrcn_22_resultatsselection_v0-1_20230927_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0100",
+  "etab": "CHU DE CLERMONT-FERRAND",
+  "porteur": "Cyril GARROUSTE",
+  "acro": "TACITE",
+  "titre": "Impact du maintien du TACrolImus après arrêt de fonction du greffon sur l’accès à nouvelle Transplantation rénalE, une étude randomisée controlée .",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0220",
+  "etab": "CHU ROUEN",
+  "porteur": "Dominique GUERROT",
+  "acro": "DAPA-PKD",
+  "titre": "Sécurité rénale de la Dapagliflozine dans la Polykystose Rénale Autosomique Dominante.",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0005",
+  "etab": "CHU DE TOURS",
+  "porteur": "Marine NAUDIN",
+  "acro": "MEDIA",
+  "titre": "Efficacité d’un programme de MEditation de pleine conscience en ligne sur la fatigue perçue des patients hémoDIAlysés chroniques (MEDIA) : un essai randomisé contrôlé sur liste d'attente.",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0326",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Zahir AMOURA",
+  "acro": "DISCUS",
+  "titre": "Daratumumab dans les néphropathies lupiques : une étude randomisée contrôlée bayésienne de phase II.",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0008",
+  "etab": "CHU TOULOUSE",
+  "porteur": "Stanislas FAGUER",
+  "acro": "REVERSE",
+  "titre": "Un essai randomisé de supériorité, multicentrique, contre placebo et en double-aveugle visant à évaluer l’efficacité rénale de l’avacopan en plus du traitement standard au cours des vascularites à ANCA avec insuffisance rénale sévère.",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0279",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Brousse ROMAIN",
+  "acro": "OBLUMEN",
+  "titre": "Obinutuzumab dans le traitement de la glomérulonéphrite extramembraneuse lupique : un essai de phase II.",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0353",
+  "etab": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+  "porteur": "Florence RUNYO",
+  "acro": "Cotrim-High",
+  "titre": "Efficacité de la prophylaxie quotidienne par cotrimoxazole 800/160mg sur l'incidence des infections bactériennes à 6mois de la transplantation rénale Investigateur coordinateur Dr Florence Runyo - Responsable scientifique Pr Olivier Lortholary .",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2023",
+  "num": "PHRC-23-0015",
+  "etab": "CHU ROUEN",
+  "porteur": "Didier PLISSONNIER",
+  "acro": "EPAKI",
+  "titre": "Evaluation de l’efficacité du pré-conditionnement ischémique pour la prévention de l’insuffisance rénale aiguë après chirurgie ouverte de l’anévrisme juxtarénale de l’aorte abdominale.",
+  "fichier": "projets_retenus_au_phrc-n_2023.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2023",
+  "num": "PHRCI-2023-18",
+  "etab": "Hôpitaux Universitaires de Strasbourg",
+  "porteur": "Julien DEMISELLE",
+  "acro": "RedIS-Study",
+  "titre": "Une stratégie de diminution de l’immunosuppression chez le patient transplanté rénal admis en réanimation pour un état de choc septique et/ou une insuffisance respiratoire aiguë : un essai contrôlé randomisé de phase IIb multicentrique en ouvert",
+  "fichier": "resultats_phrc-i2023_vf_20241129_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2023",
+  "num": "PHRCI-2023-35",
+  "etab": "CHU Angers",
+  "porteur": "Jean-François AUGUSTO",
+  "acro": "REMVAS",
+  "titre": "Étude de la REMission rénale des VAScularites associées aux ANCA à la fin du traitement d’induction de la rémission : confrontation des critères clinico-biologiques, histologiques et transcriptomiques",
+  "fichier": "resultats_phrc-i2023_vf_20241129_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2023",
+  "num": "PHRCI-2023-43",
+  "etab": "AP-HP",
+  "porteur": "Clara POUCHELON",
+  "acro": "FOSFOLD",
+  "titre": "Fosfomycine trométamol comparé à un autre traitement antibiotique actif en relais pour le traitement des pyélonéphrites aiguës à Escherichia coli chez les femmes âgées : essai randomisé, multicentrique de non infériorité",
+  "fichier": "resultats_phrc-i2023_vf_20241129_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2023",
+  "num": "PHRCI-2023-47",
+  "etab": "AP-HP",
+  "porteur": "Florence DELESTRE",
+  "acro": "PREP-ANCA",
+  "titre": "Comparaison d’une stratégie basée sur une surveillance clinico-biologique versus un traitement pré-emptif par rituximab en cas de repositivation des ANCA au cours de la granulomatose avec polyangéite et la polyangéite microscopique",
+  "fichier": "resultats_phrc-i2023_vf_20241129_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2023",
+  "num": "PHRCI-2023-55",
+  "etab": "AP-HP",
+  "porteur": "Alexandre LAHENS",
+  "acro": "DNISNI",
+  "titre": "Diagnostic Non Invasif des Syndromes Néphrotiques Idiopathiques",
+  "fichier": "resultats_phrc-i2023_vf_20241129_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2023",
+  "num": "PHRCI-2023-60",
+  "etab": "CHU de Nice",
+  "porteur": "Clément GOSSET",
+  "acro": "CHRONOVAX 2",
+  "titre": "Étude multicentrique de l’impact de l’heure de la vaccination sur la réponse au vaccin antigrippal chez le patient insuffisant rénal chronique",
+  "fichier": "resultats_phrc-i2023_vf_20241129_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2024",
+  "num": "PHRC-I-2024-12",
+  "etab": "CH d'Annecy Genevois",
+  "porteur": "Benoit FRANKO",
+  "acro": "LUMIDIAL-2",
+  "titre": "Essai randomisé évaluant l’effet de la luminothérapie par lunettes contre dispositif sham sur l’évolution des états dépressifs autoperçus chez les patients dialysés chroniques.",
+  "fichier": "resultats_phrc-i2024_vf_20260216_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2024",
+  "num": "PHRC-I-2024-14",
+  "etab": "CHU de Reims",
+  "porteur": "Vincent DUPONT",
+  "acro": "KIDNEY-MOM",
+  "titre": "Concentrations en Kynurenine au cours de la Grossesse chez les Femmes avec ou sans Maladie Rénale Chronique : une Étude Prospective Multicentrique.",
+  "fichier": "resultats_phrc-i2024_vf_20260216_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2024",
+  "num": "PHRC-I-2024-71",
+  "etab": "CHU de Lille",
+  "porteur": "Sarah STABLER",
+  "acro": "IMPROVE",
+  "titre": "Immunogenicity of Multi-dose Pneumococcal vaccine in Renal transplant candidates: a multicenter randOmized trial to Validate Efficacy.",
+  "fichier": "resultats_phrc-i2024_vf_20260216_ri1.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2016",
+  "num": "PHRCI-16-013",
+  "etab": "CHU SAINT-ETIENNE",
+  "porteur": "Elisabeth BOTELHO-NEVERS",
+  "acro": "CIBERSTAPH",
+  "titre": "Evaluation de l’impact d’une stratégie de décolonisation ciblée des porteurs persistants de Staphylococcus aureus sur la survenue d’infections à S. aureus en hémodialyse",
+  "fichier": "resultats_phrc-i_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2016",
+  "num": "PHRCI-16-026",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Guillaume GERI",
+  "acro": "PRED-IRC",
+  "titre": "Risque de maladie rénale chronique après un épisode d’insuffisance rénale aiguë en réanimation : développement et validation d’un score pronostique",
+  "fichier": "resultats_phrc-i_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2016",
+  "num": "PHRCI-16-028",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Anatole HARROIS",
+  "acro": "ASTRAU",
+  "titre": "Comparaison des effets rénaux des solutés de remplissage vasculaire PlASmalyte Viaflo et NaCl 0,9 % au cours de la réanimation de patients TRAUmatisés graves",
+  "fichier": "resultats_phrc-i_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2016",
+  "num": "PHRCI-16-056",
+  "etab": "CHU DE NANTES",
+  "porteur": "Noelle BRULE",
+  "acro": "HYPOREME",
+  "titre": "Impact de l’hypothermie thérapeutique chez les donneurs d’organes en mort encéphalique à critères élargis sur la reprise fonctionnelle du greffon rénal chez le patient transplanté: Essai clinique contrôlé randomisé multicentrique « HYPOREME»",
+  "fichier": "resultats_phrc-i_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2017",
+  "num": "PHRCN-17-0222",
+  "etab": "AP-HP",
+  "porteur": "Vincent AUDARD",
+  "acro": "RIFIREINS",
+  "titre": "Rituximab dès le premier épisode de Syndrome Néphrotique à Lésions Glomérulaires Minimes de l’adulte",
+  "fichier": "resultats_phrc-n_2017_040118.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2017",
+  "num": "PHRCN-17-0382",
+  "etab": "CHU STRASBOURG",
+  "porteur": "Samira FAFI-KREMER",
+  "acro": "BKANIG",
+  "titre": "Intérêt des Immunoglobulines Intraveineuses dans la prévention de l’infection à BK virus chez le greffé rénal en fonction du taux des anticorps neutralisants BKV le jour de la greffe: Etude multicentrique prospective randomisée",
+  "fichier": "resultats_phrc-n_2017_040118.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2017",
+  "num": "PHRCN-17-0564",
+  "etab": "AP-HP",
+  "porteur": "Frédéric LAPOSTOLLE",
+  "acro": "IODA",
+  "titre": "Voie Intra-Osseuse dans l’Abord Vasculaire Difficile",
+  "fichier": "resultats_phrc-n_2017_040118.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2017",
+  "num": "PHRCN-17-0280",
+  "etab": "AP-HP",
+  "porteur": "Evangeline PILLEBOUT",
+  "acro": "COLCHIVAS",
+  "titre": "Intérêt de la colchicine pour prévenir les rechutes cutanées au cours de la vascularite à IgA de l'adulte",
+  "fichier": "resultats_phrc-n_2017_040118.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2017",
+  "num": "PHRCN-17-0674",
+  "etab": "CHU NICE",
+  "porteur": "Barbara SEITZ-POLSKI",
+  "acro": "PMMN",
+  "titre": "Médecine personnalisée pour le traitement de la glomérulonéphrite extramembraneuse",
+  "fichier": "resultats_phrc-n_2017_040118.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0175",
+  "etab": "AP-HM",
+  "porteur": "Laurent BONELLO",
+  "acro": "trouper",
+  "titre": "Clopidogrel ou ticagrelor pour les patients insuffisants rénaux sévères ou dialysés traités par angioplastie coronaire dans le cadre d’un syndrome coronarien aigu.",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0488",
+  "etab": "CHU BESANCON",
+  "porteur": "Cécile COURIVAUD",
+  "acro": "Qualifragilys",
+  "titre": "Qualité de vie et Dialyse incrémentale chez les patients fragiles",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0513",
+  "etab": "CHU MONTPELLIER",
+  "porteur": "Rodolphe THURET",
+  "acro": "CEReP",
+  "titre": "Evaluation de l'embolisation des reins polykystiques comme alternative à la néphrectomie avant transplantation rénale.",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0073",
+  "etab": "HUS",
+  "porteur": "Sophie CAILLARD OHLMANN",
+  "acro": "BKEVER",
+  "titre": "Étude multicentrique randomisée évaluant la clairance virale du BK virus chez des patients transplantés du rein virémiques après réduction isolée de l’immunosuppression vs. réduction de l’immunosuppression et remplacement du mycophenolate mofetil par de l’évérolimus (Certican).",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0617",
+  "etab": "HCL",
+  "porteur": "Jean-Christophe LEGA",
+  "acro": "MAINEPSAN",
+  "titre": "Traitement d’entretien par une administration prolongée de prednisone dans les vascularites systémiques associées aux anticorps anti-cytoplasme des polynucléaires neutrophiles (ANCA). Essai prospectif, multicentrique, randomisé, contrôlé, en double aveugle.",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0278",
+  "etab": "AP-HP",
+  "porteur": "Didier DREYFUSS",
+  "acro": "AKIKI2",
+  "titre": "Comparaison de 2 stratégies d'initiation de l'épuration extra-rénale en réanimation, essai contrôlé randomisé.",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0547",
+  "etab": "AP-HP",
+  "porteur": "Julien HOGAN",
+  "acro": "RITUXIVIG",
+  "titre": "Efficacité et tolérance de l'association des immunoglobulines polyvalentes au Rituximab comparé au Rituximab seul chez les enfants présentant un syndrome néphrotique corticodépendant",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0460",
+  "etab": "CHD LA ROCHE SUR YON LUCON MONTAIGU",
+  "porteur": "Grégoire COUVRAT-DESVERGNES",
+  "acro": "MASTER-Anca",
+  "titre": "Etude prospective multicentrique randomisée comparant l'arrêt ou la poursuite du traitement immunosuppresseur d'entretien des vascularites associées aux ANCA chez les patients en Insuffisance Rénale Terminale",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2016",
+  "num": "PHRCN-16-0560",
+  "etab": "CHU POITIERS",
+  "porteur": "Samy HADJADJ",
+  "acro": "ACTIDIANE",
+  "titre": "Essai randomisé pour évaluer l'efficacité d'un programme d'activité physique à haute intensité sur la fonction rénale de sujets diabétiques de type 2 à haut risque",
+  "fichier": "resultats_phrc_2016_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2018",
+  "num": "PHRCI-18-005",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Hang Korng EA",
+  "acro": "Ana4CKD",
+  "titre": "Essai contrôlé randomisé multicentrique en double aveugle comparant l’anakinra à la prednisone dans le traitement de la crise de goutte chez des patients avec une maladie rénale chronique stades 4-5 ou transplantés rénaux",
+  "fichier": "resultats_phrci_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2018",
+  "num": "PHRCI-18-049",
+  "etab": "CHU CAEN",
+  "porteur": "Maxence FICHEUX",
+  "acro": "Api-DP",
+  "titre": "Pharmacocinétique de l’apixaban chez les sujets en insuffisance rénale terminale traités par dialyse péritonéale",
+  "fichier": "resultats_phrci_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2018",
+  "num": "PHRCI-18-064",
+  "etab": "CHU DE NANTES",
+  "porteur": "Claire GARANDEAU",
+  "acro": "Belacoeur",
+  "titre": "Etude pilote : Intérêt du bélatacept comme traitement immunosuppresseur non néphrotoxique, chez des transplantés cardiaques à risque d'Insuffisance Rénale Chronique",
+  "fichier": "resultats_phrci_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2019",
+  "num": "PHRCI-19-068",
+  "etab": "HOSPICES CIVILS DE LYON",
+  "porteur": "Laurent BITKER",
+  "acro": "GO-NEUTRAL",
+  "titre": "Neutralisation de la balance hydrosodée guidée par l’hémodynamique au cours de l’épuration extra-rénale continue en réanimation.",
+  "fichier": "resultats_phrci_2019_mel_v0-1_20200929.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2019",
+  "num": "PHRCI-19-010",
+  "etab": "ASSISTANCE PUBLIQUE AP-HP",
+  "porteur": "Benjamin Glenn CHOUSTERMAN",
+  "acro": "Rasbu-SEPSIS",
+  "titre": "Effets de la rasburicase sur la fonction rénale au cours du sepsis – essai randomisé, contrôlé versus placébo, en double aveugle",
+  "fichier": "resultats_phrci_2019_mel_v0-1_20200929.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2019",
+  "num": "PHRCI-19-025",
+  "etab": "CHU DE NICE",
+  "porteur": "Guillaume FAVRE",
+  "acro": "PREDICAL",
+  "titre": "Développement d’un nouveau biomarqueur permettant de prédire le développement des calcifications artérielles dès les stades précoces de la maladie rénale chronique : le pyrophosphate",
+  "fichier": "resultats_phrci_2019_mel_v0-1_20200929.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2019",
+  "num": "PHRCI-19-090",
+  "etab": "CHRU DE NANCY",
+  "porteur": "Sophie GIRERD",
+  "acro": "KT-CANOPY",
+  "titre": "Essai randomisé du blocage du récepteur minéralocorticoïde par spironolactone sur l’évolution de la cardiopathie des patients greffés rénaux au-delà d’un an sous anticalcineurines",
+  "fichier": "resultats_phrci_2019_mel_v0-1_20200929.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2019",
+  "num": "PHRCI-19-093",
+  "etab": "CHU DIJON",
+  "porteur": "Pierre-Grégoire GUINOT",
+  "acro": "NOVACC",
+  "titre": "Etude randomisée prospective en double aveugle de supériorité d’évaluation de la NOradrénalie versus la VAsopressine dans la prise en charge du patient à risque rénal opéré d’une Chirurgie Cardiaque avec circulation extra-corporelle.",
+  "fichier": "resultats_phrci_2019_mel_v0-1_20200929.xlsx"
+ },
+ {
+  "type": "PHRC-I",
+  "annee": "2019",
+  "num": "PHRCI-19-031",
+  "etab": "CHU AMIENS PICARDIE",
+  "porteur": "Dimitri TITECA",
+  "acro": "VITAKI",
+  "titre": "La supplémentation à forte dose en vitamine B3 permet-elle de prévenir les évènements rénaux majeurs au cours du choc septique? Etude randomisée contrôlée multicentrique",
+  "fichier": "resultats_phrci_2019_mel_v0-1_20200929.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2018",
+  "num": "PHRCN-18-0741",
+  "etab": "AP-HP",
+  "porteur": "Olivia GILLION BOYER",
+  "acro": "OPTI-TREX",
+  "titre": "Adaptation bayésienne des doses d’enoxaparine en transplantation rénale pédiatrique",
+  "fichier": "resultats_phrcn_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2018",
+  "num": "PHRCN-18-0328",
+  "etab": "CHU MONTPELLIER",
+  "porteur": "Boris JUNG",
+  "acro": "BICARICU-2",
+  "titre": "Bicarbonate de Sodium et traitement des acidoses métaboliques sévères avec insuffisance rénale aigue en réanimation : un essai randomisé contrôlé",
+  "fichier": "resultats_phrcn_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2018",
+  "num": "PHRCN-18-0704",
+  "etab": "CHU BREST",
+  "porteur": "Yannick LE MEUR",
+  "acro": "Oxyop2",
+  "titre": "Evaluation d’un transporteur d’oxygène d’origine marine pour la préservation des organes : une étude multicentrique randomisée évaluant l'efficacité d'HEMO2Life® versus traitement conventionnel en transplantation rénale.",
+  "fichier": "resultats_phrcn_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2018",
+  "num": "PHRCN-18-0191",
+  "etab": "CHU NANTES",
+  "porteur": "Emmanuel MONTASSIER",
+  "acro": "InSaKa",
+  "titre": "Insuline versus Salbutamol versus Insuline et Salbutamol pour le traitement de l’hyperkaliémie aiguë: essai clinique randomisé",
+  "fichier": "resultats_phrcn_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2018",
+  "num": "PHRCN-18-0050",
+  "etab": "APHM",
+  "porteur": "Thomas ROBERT",
+  "acro": "RHEO-PAD",
+  "titre": "Efficacité et tolérance de la rhéophérèse dans le traitement de l'artérite discale du patient dialysé : une étude prospective randomisée en simple aveugle.",
+  "fichier": "resultats_phrcn_2018_mel.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0105",
+  "etab": "HUS",
+  "porteur": "Sophie CAILLARD",
+  "acro": "REPLY",
+  "titre": "Étude prospective multicentrique randomisée évaluant l’efficacité d’un traitement préventif par Rituximab chez des adultes patients transplantés rénaux EBV négatifs sur l’incidence de la primoinfection EBV et des syndromes lymphoprolifératifs.",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0363",
+  "etab": "AP-HP",
+  "porteur": "Nathalie COSTEDOAT-CHALUMEAU",
+  "acro": "RITUXILUP",
+  "titre": "Traitement d’induction des néphropathies lupiques sévères sans adjonction de corticoïdes oraux (CT) : étude randomisée ouverte multicentrique comparant un traitement classique par corticoïdes et mycophenolate mofetil (MMF) versus un traitement par Rituximab et MMF",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0380",
+  "etab": "AP-HP",
+  "porteur": "Etienne GAYAT",
+  "acro": "START-or-NOT",
+  "titre": "Impact sur le pronostic d’un traitement par Inhibiteur du système rénine-angiotensine-aldostérone après insuffisance rénale aiguë en sortie de réanimation Essai contrôlé randomisé en double aveugle",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0352",
+  "etab": "AP-HP",
+  "porteur": "Alexandre HERTIG",
+  "acro": "GABRIEL",
+  "titre": "Evaluation de la vitamine B3 pour l'amélioration de la reprise de la fonction du greffon rénal: étude randomisée versus placebo.",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0193",
+  "etab": "AP-HP",
+  "porteur": "Matthieu LAFAURIE",
+  "acro": "SHORTCUT",
+  "titre": "Essai randomisé, multicentrique, de non-infériorité évaluant deux durées de traitement antibiotique (7 versus 14 jours) dans les pyélonéphrites aiguës du transplanté rénal.",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0126",
+  "etab": "CHU LILLE",
+  "porteur": "Arnaud LIONET",
+  "acro": "RHEOCAL",
+  "titre": "EFFICACITÉ DE LA RHEOPHÉRÈSE EN TRAITEMENT ADJUVANT DE LA CALCIPHYLAXIE DU PATIENT EN HEMODIALYSE CHRONIQUE: UNE ÉTUDE PROSPECTIVE RANDOMISÉE EN SIMPLE AVEUGLE",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0321",
+  "etab": "AP-HP",
+  "porteur": "Makoto MIYARA",
+  "acro": "TRTREG",
+  "titre": "Thérapie cellulaire Treg en transplantation rénale",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0177",
+  "etab": "HOPITAL FOCH",
+  "porteur": "Romain PAULE",
+  "acro": "RIGA",
+  "titre": "Évaluation du RITUXIMAB en association à un traitement par corticoïdes versus corticoïdes et placebo de RITUXIMAB en traitement d'induction et d'entretien au cours des vascularites à IgA de l'adulte. Étude randomisée contre placebo en double aveugle.",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0112",
+  "etab": "CHU NANCY",
+  "porteur": "Patrick ROSSIGNOL",
+  "acro": "TRACK",
+  "titre": "Essai contrôlé randomisé de prévention primaire et secondaire des maladies cardiovasculaires par de faibles doses de rivaroxaban vs. placebo dans l'insuffisance rénale chronique avancée",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ },
+ {
+  "type": "PHRC-N",
+  "annee": "2019",
+  "num": "PHRC-19-0406",
+  "etab": "AP-HP",
+  "porteur": "François VRTOVSNIK",
+  "acro": "AMIND",
+  "titre": "Essai thérapeutique contrôlé randomisé de l’efficacité de l’amiloride dans le traitement du diabète insipide néphrogénique secondaire à un traitement par lithium chez des patients bipolaires.",
+  "fichier": "resultats_phrcn_2019_mel_v0-2_20200102.xlsx"
+ }
+]
