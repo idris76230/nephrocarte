@@ -1,0 +1,25 @@
+{
+  "_aide": [
+    "Corrections manuelles, appliquées à chaque mise à jour après la collecte automatique (scripts/corrections.py).",
+    "etude : NCT, numéro EU CT, numéro de projet PHRC ou acronyme.",
+    "centre : ajoute le centre, ou complète celui de la même ville resté anonyme (« Site non nommé par le promoteur ») ou portant le même nom.",
+    "  etablissement : nom affiché (reprendre si possible le nom déjà utilisé dans l'outil, ex. « Hôpital européen Georges-Pompidou (AP-HP) »).",
+    "  ville : ville telle qu'affichée dans l'outil (Paris & IDF, Lyon, Marseille, Bruxelles...). statut : Ouvert, À venir, Sur invitation, Fermé.",
+    "  contacts : liste de {nom, role, email, tel} — uniquement des coordonnées professionnelles transmises par le centre.",
+    "retirer_centre : nom d'établissement à retirer de l'étude. statut_etude : remplace le statut global. note : texte ajouté à la présentation.",
+    "Aucune donnée patient."
+  ],
+  "corrections": [
+    {
+      "etude": "NCT05755386",
+      "date": "2026-10-08",
+      "source": "Commission clinique SFNDT",
+      "centre": {
+        "etablissement": "Hôpital européen Georges-Pompidou (AP-HP)",
+        "ville": "Paris & IDF",
+        "statut": "Ouvert",
+        "contacts": [{"nom": "Pr Sophie Chauvet", "role": "Investigatrice coordonnatrice"}]
+      }
+    }
+  ]
+}

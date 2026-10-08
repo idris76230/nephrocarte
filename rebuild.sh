@@ -11,4 +11,7 @@ fi
 python3 -I scripts/local_merge.py app/data.json data/local app/data.json
 python3 -I scripts/phrc_match.py app/data.json data/phrc_nephro.json app/data.json data/phrc_rapport.csv | head -2
 python3 -I scripts/centres.py app/data.json app/data.json | head -1
+if [ -f data/corrections.json ]; then
+  python3 -I scripts/corrections.py app/data.json data/corrections.json app/data.json
+fi
 python3 -I scripts/build.py

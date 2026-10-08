@@ -6,7 +6,7 @@ on:
   workflow_dispatch:         # bouton « Run workflow » pour une mise à jour à la demande
   push:
     branches: [main]
-    paths: ["app/template.html", "scripts/**", "data/local/**", "data/phrc_lists/**", "data/phrc_alias.json"]
+    paths: ["app/template.html", "scripts/**", "data/local/**", "data/phrc_lists/**", "data/phrc_alias.json", "data/corrections.json"]
 
 permissions:
   contents: write

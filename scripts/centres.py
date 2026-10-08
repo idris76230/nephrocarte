@@ -41,9 +41,15 @@ def clean_city(v):
     v = re.sub(r"\s+\d+$", "", v)
     return v
 
+# libellés anonymes des promoteurs industriels (« Research Site », « Novartis Investigative Site »...) : un site par ville
+GENERIC = re.compile(r"^(\w+ )?(investigat\w*|research|clinical( trial| research)?|study|trial)( clinical)? (site|facility|center|centre)\b|"
+                     r"^site\s*(be|fr)?\s*#?\s*\d+$|^investigational site number", re.I)
+
 def canon(c):
     v = clean_city(c["v"])
     n = k(c["f"])
+    if GENERIC.search(c["f"].strip()):
+        return v, f"Site non nommé par le promoteur ({v}{', ' + c['z'] if c.get('z') else ''})"
     for city, items in NAMED:
         if city == v:
             for pat, name in items:
