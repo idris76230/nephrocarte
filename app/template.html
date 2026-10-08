@@ -156,7 +156,7 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
   <form class="card" id="p-crit" role="tabpanel" aria-labelledby="tab-crit">
     <div class="row">
       <div class="field"><label for="c-th">Thématique</label><select id="c-th"></select></div>
-      <div class="field"><label for="c-pa">Pathologie <span class="opt">(optionnel)</span></label><select id="c-pa" disabled></select><p class="hint" id="c-pa-hint">Sélectionnez d'abord une thématique</p></div>
+      <div class="field"><label for="c-pa">Pathologie <span class="opt">(optionnel)</span></label><select id="c-pa"></select><p class="hint" id="c-pa-hint" hidden></p></div>
     </div>
     <div class="row">
       <div class="field"><label for="c-q">Mot-clé <span class="opt">(optionnel)</span></label><div class="input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="c-q" type="search" placeholder="Ex : avacopan, rituximab, hémodiafiltration"></div></div>
@@ -167,7 +167,7 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
       <div class="field"><span class="lbl">Type d'étude</span><div class="picks" id="c-cat"></div></div>
       <div class="field"><span class="lbl">Promoteur / financement</span><div class="picks" id="c-fund"></div></div>
     </div>
-    <div class="field"><span class="lbl">Population</span><div class="picks"><label class="pick"><input type="checkbox" id="c-ped"><span>Inclut des enfants</span></label></div></div>
+    <div class="field"><span class="lbl">Population</span><div class="picks"><label class="pick"><input type="checkbox" id="c-ped"><span>Inclut la population pédiatrique</span></label></div></div>
     <div class="actions"><button type="button" class="link" data-reset="crit">Effacer les critères</button><button class="go" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Rechercher</button></div>
   </form>
 
@@ -183,7 +183,7 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
     <div class="field"><label for="k-q">Centre</label><div class="input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="k-q" type="search" list="facilities" placeholder="Ex : Hôpital Necker, CHU de Toulouse, UZ Leuven, Bordeaux"></div><p class="hint">Nom de l'hôpital ou ville. Les libellés déclarés par les promoteurs sont regroupés par établissement.</p></div>
     <div class="row">
       <div class="field"><label for="k-th">Thématique <span class="opt">(optionnel)</span></label><select id="k-th"></select></div>
-      <div class="field"><label for="k-pa">Pathologie <span class="opt">(optionnel)</span></label><select id="k-pa" disabled></select><p class="hint" id="k-pa-hint">Sélectionnez d'abord une thématique</p></div>
+      <div class="field"><label for="k-pa">Pathologie <span class="opt">(optionnel)</span></label><select id="k-pa"></select><p class="hint" id="k-pa-hint" hidden></p></div>
     </div>
     <div class="field"><span class="lbl">Statut de recrutement dans ce centre</span><div class="picks" id="k-st"></div></div>
     <div class="actions"><button type="button" class="link" data-reset="ctr">Effacer</button><button class="go" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>Rechercher</button></div>
@@ -295,10 +295,15 @@ const PATHO_BY_TH = {};
 DATA.forEach(d => d.pa.forEach(p => { const t = PMAP[p]; if (!t) return; (PATHO_BY_TH[t] ||= {}); PATHO_BY_TH[t][p] = (PATHO_BY_TH[t][p]||0) + 1; }));
 function themeSelect(sel, paSel, hint){
   sel.innerHTML = `<option value="">Toutes les thématiques</option>` + THEMES.map(t => `<option>${esc(t)}</option>`).join("");
+  // sans thématique : toutes les pathologies, rangées par thématique
+  const opts = t => Object.entries(PATHO_BY_TH[t] || {}).sort((a,b)=>a[0].localeCompare(b[0],"fr"))
+    .map(([p,n]) => `<option value="${esc(p)}">${esc(p)} (${n})</option>`).join("");
   sel.onchange = () => {
-    const t = sel.value, list = t && PATHO_BY_TH[t] ? Object.entries(PATHO_BY_TH[t]) : [];
-    paSel.innerHTML = `<option value="">Toutes les pathologies</option>` + list.sort((a,b)=>a[0].localeCompare(b[0],"fr")).map(([p,n]) => `<option value="${esc(p)}">${esc(p)} (${n})</option>`).join("");
-    paSel.disabled = !t || !list.length; hint.hidden = !!t;
+    const t = sel.value, keep = paSel.value;
+    paSel.innerHTML = `<option value="">Toutes les pathologies</option>` +
+      (t ? opts(t) : THEMES.filter(x => PATHO_BY_TH[x]).map(x => `<optgroup label="${esc(x)}">${opts(x)}</optgroup>`).join(""));
+    if ([...paSel.options].some(o => o.value === keep)) paSel.value = keep;
+    paSel.disabled = !paSel.options.length || paSel.options.length < 2;
   };
   sel.onchange();
 }
@@ -312,7 +317,6 @@ const cnt = (k, v) => fmt(DATA.filter(d => d[k] === v).length);
 picks($("c-st"), "cst", ST, ["Ouvert","À venir","À confirmer"], v => cnt("st", v));
 picks($("c-cat"), "ccat", CATS, [], v => cnt("cat", v));
 picks($("c-fund"), "cfund", FUNDS, [], v => cnt("fund", v));
-$("c-fund").insertAdjacentHTML("beforeend", `<label class="pick"><input type="checkbox" id="c-phrc"><span>PHRC uniquement <span class="c">${fmt(DATA.filter(d=>d.phrc).length)}</span></span></label>`);
 picks($("k-st"), "kst", SITE_ST, ["Ouvert","À venir","Sur invitation","À confirmer"]);
 const checkedVals = name => [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(i => i.value);
 
@@ -345,7 +349,7 @@ function search(){
     const st = checkedVals("cst"), cat = checkedVals("ccat"), fund = checkedVals("cfund"), ped = $("c-ped").checked;
     const loc = locate($("c-loc").value); setNote($("c-loc-note"), loc); ctx.loc = loc && !loc.err ? loc : null;
     return DATA.filter(d => (!th || d.th.includes(th)) && (!pa || d.pa.includes(pa)) && q.every(w => d._s.includes(w)) &&
-      (!st.length || st.includes(d.st)) && (!cat.length || cat.includes(d.cat)) && (!fund.length || fund.includes(d.fund)) && (!ped || d.ped) && (!$("c-phrc").checked || d.phrc));
+      (!st.length || st.includes(d.st)) && (!cat.length || cat.includes(d.cat)) && (!fund.length || fund.includes(d.fund)) && (!ped || d.ped));
   }
   if (mode === "id") {
     const q = norm($("i-q").value).trim();

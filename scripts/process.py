@@ -5,7 +5,7 @@ _extra = os.path.join(os.path.dirname(sys.argv[1]), "ctgov_phrc.json")
 if os.path.exists(_extra):
     for _k, _v in json.load(open(_extra)).items(): d.setdefault(_k, _v)
 sys.path.insert(0, __import__("os").path.dirname(__file__))
-from rules import ONCO, NEPH, THEMES, theme, PHRC, KCE, txt, stale_ok
+from rules import ONCO, NEPH, THEMES, theme, PHRC, KCE, txt, stale_ok, onco_study
 STAT_FR = {"RECRUITING":"Recrutement ouvert","NOT_YET_RECRUITING":"Pas encore ouvert","ENROLLING_BY_INVITATION":"Sur invitation","ACTIVE_NOT_RECRUITING":"Actif, recrutement clos","UNKNOWN":"À confirmer"}
 rows = []; dropped = []
 for nct, s in d.items():
@@ -20,6 +20,8 @@ for nct, s in d.items():
     clean = ONCO.sub(" ", txt(ctext, title))
     onco_only = bool(ONCO.search(ctext)) and not NEPH.search(ONCO.sub(" ", ctext))
     if not NEPH.search(clean) or onco_only:
+        dropped.append((nct, title, conds[:3])); continue
+    if onco_study(title, otitle, *conds):
         dropped.append((nct, title, conds[:3])); continue
     if re.search(r"liver transplant|heart transplant|lung transplant", ctext, re.I) and not re.search(r"kidney|renal", txt(ctext,title), re.I):
         dropped.append((nct, title, conds[:3])); continue

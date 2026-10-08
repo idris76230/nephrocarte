@@ -6,7 +6,7 @@ Usage : python3 ctis_merge.py app/data.json data/raw/ctis_search.json data/raw/c
 """
 import json, os, re, sys, unicodedata
 sys.path.insert(0, os.path.dirname(__file__))
-from rules import theme, PATHO, PHRC
+from rules import theme, PATHO, PHRC, onco_study
 from norm import city
 
 data = json.load(open(sys.argv[1]))
@@ -89,7 +89,7 @@ for d in data: d["src"] = "CT.gov"
 added = merged = 0
 for ct, det in details.items():
     rec = ctis_record(ct, det, search.get(ct, {}))
-    if not rec["ce"]: continue
+    if not rec["ce"] or onco_study(rec["t"], search.get(ct, {}).get("ctTitle", ""), search.get(ct, {}).get("conditions", "")): continue
     twin = by_eu.get(ct) or by_nct.get(rec["nct"])
     if twin:
         merged += 1
