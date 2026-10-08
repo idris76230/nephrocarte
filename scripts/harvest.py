@@ -5,7 +5,7 @@ COND = ('kidney OR renal OR nephropathy OR nephritis OR glomerulonephritis OR gl
         'OR "IgA nephropathy" OR "lupus nephritis" OR "ANCA" OR "hemolytic uremic syndrome" OR "C3 glomerulopathy" '
         'OR "polycystic kidney" OR Alport OR Fabry OR cystinosis OR "membranous nephropathy" OR FSGS OR nephrolithiasis '
         'OR "kidney stones" OR hyperoxaluria OR "end stage renal disease" OR "kidney failure" OR hyperkalemia')
-STAT = 'RECRUITING,NOT_YET_RECRUITING,ENROLLING_BY_INVITATION,ACTIVE_NOT_RECRUITING'
+STAT = 'RECRUITING,NOT_YET_RECRUITING,ENROLLING_BY_INVITATION,ACTIVE_NOT_RECRUITING,UNKNOWN'  # UNKNOWN trié dans process.py
 allst = {}
 for country in ('France', 'Belgium'):
     tok = None; n = 0

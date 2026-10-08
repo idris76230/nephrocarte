@@ -99,6 +99,8 @@ for ct, det in details.items():
         if has(rec["ce"]) > has(twin["ce"]):
             twin["ce"] = rec["ce"]
         if not twin["ac"] and rec["ac"]: twin["ac"] = rec["ac"]
+        if twin["st"] == "À confirmer" and rec["st"] != "À confirmer":  # CTIS, tenu à jour, tranche
+            twin["st"], twin["upd"] = rec["st"], ""
     else:
         added += 1
         data.append(rec)

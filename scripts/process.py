@@ -5,12 +5,13 @@ _extra = os.path.join(os.path.dirname(sys.argv[1]), "ctgov_phrc.json")
 if os.path.exists(_extra):
     for _k, _v in json.load(open(_extra)).items(): d.setdefault(_k, _v)
 sys.path.insert(0, __import__("os").path.dirname(__file__))
-from rules import ONCO, NEPH, THEMES, theme, PHRC, KCE, txt
-STAT_FR = {"RECRUITING":"Recrutement ouvert","NOT_YET_RECRUITING":"Pas encore ouvert","ENROLLING_BY_INVITATION":"Sur invitation","ACTIVE_NOT_RECRUITING":"Actif, recrutement clos","UNKNOWN":"Statut non précisé"}
+from rules import ONCO, NEPH, THEMES, theme, PHRC, KCE, txt, stale_ok
+STAT_FR = {"RECRUITING":"Recrutement ouvert","NOT_YET_RECRUITING":"Pas encore ouvert","ENROLLING_BY_INVITATION":"Sur invitation","ACTIVE_NOT_RECRUITING":"Actif, recrutement clos","UNKNOWN":"À confirmer"}
 rows = []; dropped = []
 for nct, s in d.items():
     p = s["protocolSection"]
     idm = p["identificationModule"]; sm = p["statusModule"]; dm = p["designModule"]
+    if sm["overallStatus"] == "UNKNOWN" and not stale_ok(sm): continue
     cm = p.get("conditionsModule", {}); spm = p["sponsorCollaboratorsModule"]
     conds = cm.get("conditions", []); kws = cm.get("keywords", [])
     title = idm.get("briefTitle", ""); otitle = idm.get("officialTitle", "")

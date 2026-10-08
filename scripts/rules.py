@@ -2,6 +2,11 @@
 import re
 ONCO = re.compile(r"(renal|kidney)\s+(\w+\s+){0,2}(carcinoma|cancer|tumou?r|neoplasm)|clear cell|renal cell|kidney cancer|renal cancer|kidney neoplasm|renal neoplasm|tumou?ral kidney|wilms|nephroblastoma|carcinoma|cancer|tumou?r|neoplasm|melanoma|sarcoma|lymphoma|leuka?emia|glioma|blastoma|malignan", re.I)
 NEPH = re.compile(r"kidney|renal|(?<!epi)nephr|glomerul|dialys|uremi|uraemi|\bckd\b|\baki\b|\besrd\b|\beskd\b|iga\b|alport|fabry|cystinosis|fsgs|hyperoxaluria|lithiasis|kidney stone|\bc3g\b|\bahus\b|hemolytic uremic|anca|polyangiitis|hyperkal|proteinuri|albuminuri|tubulopath|hypophosphat|gitelman|bartter|thrombotic microangiopath|cystinuria|hemodiafiltration|hemofiltration|renal replacement|minimal change|podocyt|hepatorenal|nephrotox|urolog|bladder dysfunction|enuresis|adpkd|polycystic|vasculitis|rejection|organ transplant|(?<!pulmonary )(?<!portal )hypertension|ureter|dialytic", re.I)
+def stale_ok(sm):
+    """Fiche « UNKNOWN » (non mise à jour depuis plus de 2 ans) : gardée « À confirmer » si sa fin prévue est 2023 ou après
+    (beaucoup d'études académiques ne sont jamais mises à jour), écartée si elle est plus ancienne."""
+    fin = (sm.get("completionDateStruct") or sm.get("primaryCompletionDateStruct") or {}).get("date", "")
+    return fin >= "2023" if fin else sm.get("startDateStruct", {}).get("date", "") >= "2019"
 def txt(*xs): return " | ".join(x for x in xs if x)
 THEMES = [
  ("Transplantation", r"transplant|graft|allograft|rejection|donor|recipient|desensiti"),

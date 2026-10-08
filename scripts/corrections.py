@@ -19,7 +19,7 @@ for x in corr:
     ds = find(x["etude"])
     if not ds: missing.append(x["etude"]); continue
     for d in ds:
-        if x.get("statut_etude"): d["st"] = x["statut_etude"]
+        if x.get("statut_etude"): d["st"] = x["statut_etude"]; d["upd"] = ""
         if x.get("note"): d["fr"] = (d.get("fr", "") + " " + x["note"]).strip()
         if x.get("retirer_centre"): d["ce"] = [c for c in d["ce"] if k(c["e"]) != k(x["retirer_centre"])]
         cx = x.get("centre")

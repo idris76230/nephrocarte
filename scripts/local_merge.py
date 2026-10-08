@@ -44,11 +44,12 @@ for f in sorted(glob.glob(os.path.join(sys.argv[2], "*.json"))):
             here = [c for c in d["ce"] if c["v"] == centre["v"]]
             if here:
                 for c in here:
-                    if c["s"] in ("À venir", "Non précisé"): c["s"] = "Ouvert"
+                    if c["s"] in ("À venir", "Non précisé", "À confirmer"): c["s"] = "Ouvert"
                     if not any(k.get("e") or k.get("t") for k in c["k"]): c["k"] = centre["k"]
             else:
                 d["ce"].append(dict(centre))
             if fund and d["fund"] != "Industriel": d["fund"] = fund
+            if d["st"] == "À confirmer": d["st"], d["upd"] = "Ouvert", ""  # la page du service confirme l'étude
             if d["st"] in ("À venir", "Fermé") and not here: pass  # on ne contredit pas le registre au niveau de l'étude
             d.setdefault("loc", []).append({"src": label, "url": r["url"]})
             d["fr"] = d.get("fr") or fr

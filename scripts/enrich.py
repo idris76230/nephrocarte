@@ -16,7 +16,7 @@ SITE_ST = {"RECRUITING": "Ouvert", "NOT_YET_RECRUITING": "À venir", "ACTIVE_NOT
            "ENROLLING_BY_INVITATION": "Sur invitation", "SUSPENDED": "Suspendu"}
 SKIP_SITE = {"WITHDRAWN", "COMPLETED", "TERMINATED"}
 ST_SHORT = {"Recrutement ouvert": "Ouvert", "Pas encore ouvert": "À venir",
-            "Sur invitation": "Sur invitation", "Actif, recrutement clos": "Fermé", "Statut non précisé": "Non précisé"}
+            "Sur invitation": "Sur invitation", "Actif, recrutement clos": "Fermé", "Statut non précisé": "Non précisé", "À confirmer": "À confirmer"}
 
 def contact(c):
     return {k: v for k, v in {"n": c.get("name", "").strip(), "r": c.get("role", ""),
@@ -46,6 +46,9 @@ for r in rows:
                       "s": SITE_ST.get(l.get("status"), "Non précisé" if not l.get("status") else l["status"]),
                       "la": round(g["lat"], 4) if g else None, "lo": round(g["lon"], 4) if g else None,
                       "k": [contact(x) for x in l.get("contacts", [])]})
+    if r["st"] == "À confirmer":  # statuts des centres aussi périmés
+        for s in sites:
+            if s["s"] in ("Ouvert", "À venir", "Sur invitation", "Non précisé"): s["s"] = "À confirmer"
     summ = re.sub(r"\s+", " ", p.get("descriptionModule", {}).get("briefSummary", "")).strip()
     out.append({
         "id": r["id"], "eu": euct[:1], "ac": r["ac"], "t": r["t"], "st": ST_SHORT[r["st"]],
@@ -53,6 +56,7 @@ for r in rows:
         "ph": r["ph"], "sp": r["sp"], "ped": r["ped"], "n": r["n"], "start": r["start"],
         "sum": (summ[:420] + "…") if len(summ) > 420 else summ,
         "cc": [contact(x) for x in cl.get("centralContacts", [])][:2],
+        "upd": r.get("upd", "") if r["st"] == "À confirmer" else "",
         "ce": sites,
     })
 json.dump(out, open(sys.argv[3], "w"), ensure_ascii=False, separators=(",", ":"))

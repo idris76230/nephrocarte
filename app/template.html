@@ -75,7 +75,7 @@ button:focus-visible,summary:focus-visible,a:focus-visible,.pick input:focus-vis
 .res{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;padding:16px 18px;display:grid;gap:8px;min-width:0}
 .top{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
 .pill{font:600 12px/1 var(--f-body);padding:5px 8px;border-radius:5px;white-space:nowrap}
-.s-Ouvert{color:var(--ok);background:var(--ok-soft)} .s-Àvenir{color:var(--warn);background:var(--warn-soft)} .s-Surinvitation{color:var(--info);background:var(--info-soft)} .s-Fermé,.s-Suspendu,.s-Nonprécisé{color:var(--off);background:var(--off-soft)}
+.s-Ouvert{color:var(--ok);background:var(--ok-soft)} .s-Àvenir{color:var(--warn);background:var(--warn-soft)} .s-Surinvitation{color:var(--info);background:var(--info-soft)} .s-Àconfirmer{color:var(--warn);background:transparent;box-shadow:inset 0 0 0 1px var(--warn)} .s-Fermé,.s-Suspendu,.s-Nonprécisé{color:var(--off);background:var(--off-soft)}
 .tag{font:600 12px/1 var(--f-label);color:var(--muted);border:1px solid var(--line);padding:4px 7px;border-radius:5px;white-space:nowrap}
 .tag.phrc{color:var(--accent);border-color:var(--lime);background:#f4f8dc}
 .res h3{margin:0;font:600 16.5px/1.35 var(--f-body);text-wrap:pretty}
@@ -102,6 +102,7 @@ details summary{cursor:pointer;color:var(--link);font-weight:600;font-size:14px;
 .contacts{display:grid;gap:3px}
 .ct{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:center;font-size:13.5px}
 .ct .role{color:var(--muted)}
+.stale{margin:8px 0 0;font-size:.85rem;color:var(--warn)}
 .ct .mail,.ct .tel{font-family:var(--f-mono);font-size:12.5px;user-select:all;word-break:break-all}
 .copy{font:600 12px var(--f-body);color:var(--link);background:none;border:1px solid var(--line);border-radius:5px;padding:2px 7px;cursor:pointer}
 .nocontact{color:var(--muted);font-size:13px;font-style:italic}
@@ -247,8 +248,9 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
 <script>
 const DATA = __DATA__;
 const PMAP = __PMAP__;
-const ST = ["Ouvert","À venir","Sur invitation","Fermé","Non précisé"];
-const SITE_ST = ["Ouvert","À venir","Sur invitation","Fermé","Non précisé"];
+function frDate(x){const [y,m]=x.split("-");const M=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];return m?`${M[+m-1]} ${y}`:y;}
+const ST = ["Ouvert","À venir","Sur invitation","À confirmer","Fermé","Non précisé"];
+const SITE_ST = ["Ouvert","À venir","Sur invitation","À confirmer","Fermé","Non précisé"];
 const CATS = ["Interventionnel","Observationnel / cohorte","Cohorte avec biobanque"];
 const FUNDS = ["Académique","Industriel"];
 const ROLE = {PRINCIPAL_INVESTIGATOR:"Investigateur principal",SUB_INVESTIGATOR:"Co-investigateur",CONTACT:"Contact",STUDY_CHAIR:"Coordonnateur",STUDY_DIRECTOR:"Directeur d'étude"};
@@ -307,11 +309,11 @@ function picks(el, name, vals, checked, counter){
   el.innerHTML = vals.map(v => `<label class="pick"><input type="checkbox" name="${name}" value="${esc(v)}" ${checked.includes(v)?"checked":""}><span>${esc(v)}${counter?` <span class="c">${counter(v)}</span>`:""}</span></label>`).join("");
 }
 const cnt = (k, v) => fmt(DATA.filter(d => d[k] === v).length);
-picks($("c-st"), "cst", ST, ["Ouvert","À venir"], v => cnt("st", v));
+picks($("c-st"), "cst", ST, ["Ouvert","À venir","À confirmer"], v => cnt("st", v));
 picks($("c-cat"), "ccat", CATS, [], v => cnt("cat", v));
 picks($("c-fund"), "cfund", FUNDS, [], v => cnt("fund", v));
 $("c-fund").insertAdjacentHTML("beforeend", `<label class="pick"><input type="checkbox" id="c-phrc"><span>PHRC uniquement <span class="c">${fmt(DATA.filter(d=>d.phrc).length)}</span></span></label>`);
-picks($("k-st"), "kst", SITE_ST, ["Ouvert","À venir","Sur invitation"]);
+picks($("k-st"), "kst", SITE_ST, ["Ouvert","À venir","Sur invitation","À confirmer"]);
 const checkedVals = name => [...document.querySelectorAll(`input[name="${name}"]:checked`)].map(i => i.value);
 
 const facCount = {};
@@ -396,6 +398,7 @@ function card(d){
     <h3>${d.ac?`<span class="ac">${esc(d.ac)}</span>`:""}${esc(d.t)}</h3>
     <div class="meta"><span><b>${esc(d.th.join(" · "))}</b>${d.pa.length?` › ${esc(d.pa.join(", "))}`:""}</span><span>Promoteur : <b>${esc(d.sp)}</b></span>${d.n?`<span>Effectif prévu : <b>${fmt(d.n)}</b></span>`:""}</div>
     <div class="ids">${d._nct?`<a href="https://clinicaltrials.gov/study/${esc(d._nct)}" target="_blank" rel="noopener">${esc(d._nct)} ↗</a>`:""}${d.eu.map(e=>/^\d{4}-\d{6}-\d{2}-\d{2}$/.test(e)?`<a href="https://euclinicaltrials.eu/search-for-clinical-trials/?lang=fr&EUCT=${esc(e)}" target="_blank" rel="noopener">EU CT ${esc(e)} ↗</a>`:`<span>EudraCT ${esc(e)}</span>`).join("")}${(d.loc||[]).map(l=>`<a href="${esc(l.url)}" target="_blank" rel="noopener">Fiche ${esc(l.src)} ↗</a>`).join("")}<span class="src">Source : ${esc([d.src, ...(d.loc||[]).map(l=>l.src)].filter((x,i,a)=>a.indexOf(x)===i).join(" + "))}</span><button type="button" class="link small" data-report="${esc([d.ac, d._nct || d.eu[0]].filter(Boolean).join(" — ") || d.t.slice(0,60))}">Signaler une correction</button></div>
+    ${d.st==="À confirmer"?`<p class="stale">Fiche du registre non mise à jour${d.upd?` depuis ${esc(frDate(d.upd))}`:""} : l'étude est peut-être encore en cours. Statut à confirmer auprès de l'investigateur.</p>`:""}
     ${d.fr?`<p class="fr">${esc(d.fr)}</p>`:""}
     ${focus}
     <details><summary>${where} et contacts</summary>

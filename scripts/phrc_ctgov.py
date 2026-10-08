@@ -1,7 +1,9 @@
 """Cherche sur ClinicalTrials.gov, par acronyme, les PHRC néphro récents (2019+) et garde les fiches encore actives.
 Usage : python3 phrc_ctgov.py data/phrc_nephro.json data/raw/ctgov_phrc.json
 """
-import json, re, sys, time, unicodedata, urllib.parse, urllib.request
+import json, os, re, sys, time, unicodedata, urllib.parse, urllib.request
+sys.path.insert(0, os.path.dirname(__file__))
+from rules import stale_ok
 def k(s): return unicodedata.normalize("NFKD", str(s or "")).encode("ascii", "ignore").decode().lower()
 def acro(s): return re.sub(r"[^a-z0-9]", "", re.sub(r"\b(study|trial|etude|essai)\b", "", k(s)))
 ACTIVE = {"RECRUITING", "NOT_YET_RECRUITING", "ENROLLING_BY_INVITATION", "ACTIVE_NOT_RECRUITING", "UNKNOWN"}
@@ -16,7 +18,7 @@ for p in json.load(open(sys.argv[1])):
     for s in res:
         ps = s["protocolSection"]
         if acro(ps["identificationModule"].get("acronym", "")) == acro(p["acro"]) and ps["statusModule"]["overallStatus"] in ACTIVE:
-            if ps["statusModule"]["overallStatus"] == "UNKNOWN" and ps["statusModule"].get("lastUpdatePostDateStruct", {}).get("date", "") < "2024":
+            if ps["statusModule"]["overallStatus"] == "UNKNOWN" and not stale_ok(ps["statusModule"]):
                 continue
             out[ps["identificationModule"]["nctId"]] = s
     time.sleep(0.1)

@@ -80,7 +80,7 @@ for d in data:
         prev = seen.get(c["e"])
         if prev is None: seen[c["e"]] = c
         else:
-            order = ["Ouvert", "Sur invitation", "À venir", "Non précisé", "Fermé", "Suspendu"]
+            order = ["Ouvert", "Sur invitation", "À venir", "À confirmer", "Non précisé", "Fermé", "Suspendu"]
             rank = lambda x: order.index(x) if x in order else len(order)
             if rank(c["s"]) < rank(prev["s"]): prev["s"] = c["s"]
             prev["k"] += [x for x in c["k"] if x not in prev["k"]]
