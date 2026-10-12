@@ -1,0 +1,17 @@
+{
+ "_aide": [
+  "Généré automatiquement depuis le Google Sheet des signalements validés (scripts/sheet_corrections.py) : ne pas modifier à la main."
+ ],
+ "corrections": [
+  {
+   "etude": "TEST",
+   "date": "2026-10-12",
+   "source": "Formulaire NéphroCarte",
+   "centre": {
+    "etablissement": "CHU de Test",
+    "ville": "",
+    "statut": "Ouvert"
+   }
+  }
+ ]
+}

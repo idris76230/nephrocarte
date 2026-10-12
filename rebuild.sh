@@ -14,4 +14,7 @@ python3 -I scripts/centres.py app/data.json app/data.json | head -1
 if [ -f data/corrections.json ]; then
   python3 -I scripts/corrections.py app/data.json data/corrections.json app/data.json
 fi
+if [ -f data/corrections_formulaire.json ]; then
+  python3 -I scripts/corrections.py app/data.json data/corrections_formulaire.json app/data.json
+fi
 python3 -I scripts/build.py
