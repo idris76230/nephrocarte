@@ -1,0 +1,471 @@
+{
+ "source": "CHU de Saint-Étienne — essais cliniques",
+ "source_url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+ "centre": {
+  "f": "CHU de Saint-Étienne — Néphrologie",
+  "v": "Saint-Étienne",
+  "p": "FR",
+  "z": "42055",
+  "match": "[eé]tienne|bellevue|chuse|priest",
+  "k": []
+ },
+ "projects": [
+  {
+   "ac": "ALEXION NEF 202",
+   "long": "Étude de phase II, en double aveugle, randomisée, contrôlée par placebo, visant à évaluer l'efficacité et l'innocuité du ravulizumab chez des participants adultes atteints de néphrite proliférative du lupus (LN) ou de néphropathie à immunoglobulines A (IgAN)",
+   "sp": "ALEXION",
+   "nct": "",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie lupique",
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Eric Alamartine",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / II",
+   "obs": false
+  },
+  {
+   "ac": "ALIGN",
+   "long": "A Phase 3, Randomized, Double-blind, Placebocontrolled Study of Atrasentan in Patients with IgA Nephropathy at Risk of Progressive Loss of Renal Function",
+   "sp": "CHINOOK THERAPEUTICS U.S",
+   "nct": "NCT04573478",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nicolas Maillard",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "ALPINE-RAINIER-AIS-D08",
+   "long": "Étude de phase 3, randomisée, en double aveugle, contrôlée par placebo du povétacicept chez des adultes atteints de néphropathie à immunoglobuline A",
+   "sp": "ALPINE IMMUNE SCIENCES, INC",
+   "nct": "NCT06564142",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nicolas Maillard",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "ALXN1210-IgAN-320",
+   "long": "A Phase 3, Double-Blind, Randomized, Adaptive Design Study to Evaluate the Efficacy and Safety of Ravulizumab in Adult Participants with Immunoglobulin A Nephropathy (IgAN)",
+   "sp": "Alexion Pharmaceuticals",
+   "nct": "",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nicolas Maillard",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "BAXHTN (Baxdrostat)",
+   "long": "A Randomised, Double-Blind, Placebo-Controlled, Parallel Group Study to Assess the Efficacy and Safety of Baxdrostat in Participants with Uncontrolled Hypertension on Two or More Medications including Participants with Resistant Hypertension",
+   "sp": "AstraZeneca",
+   "nct": "NCT06034743",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "BKANIG",
+   "long": "Intérêt des Immunoglobulines Intraveineuses dans la prévention de l'infection à BK virus chez le greffé rénal en fonction du taux des anticorps neutralisants BKV le jour de la greffe: Etude multicentrique",
+   "sp": "Hôpitaux Universitaires de Strasbourg",
+   "nct": "NCT04222023",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Infections post-greffe"
+   ],
+   "k": [
+    {
+     "n": "Eric Alamartine",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "CHORUS",
+   "long": "Observatoire multicentrique international de la conversion à l'Advagraf après transplantation rénale - Étude non interventionnelle post-autorisation (PAS)",
+   "sp": "Astela",
+   "nct": "NCT02555787",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Eric Alamartine",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Ahmed Arkhis",
+     "r": "Contact de l'étude"
+    }
+   ],
+   "type": "Hors Produit de Santé RIPH 3",
+   "obs": true
+  },
+  {
+   "ac": "CIBERSTAPH",
+   "long": "Evaluation de l'impact d'une stratégie de décolonisation ciblée des porteurs persistants de Staphylococcus aureus sur la survenue d'infections à S. aureus en hémodialyse.",
+   "sp": "CHU Saint Etienne",
+   "nct": "NCT02945722",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Dialyse / suppléance"
+   ],
+   "pa": [
+    "Hémodialyse / HDF"
+   ],
+   "k": [
+    {
+     "n": "Elisabeth Botelho Nevers",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Philippine Raillard",
+     "r": "Contact de l'étude",
+     "e": "philippine.bourrassaud@chu-st-etienne.fr"
+    }
+   ],
+   "type": "IV",
+   "obs": false
+  },
+  {
+   "ac": "CONTINUITY",
+   "long": "An Open-Label, Randomised, Phase 4 Study of Continuing Sodium Zirconium Cyclosilicate (SZC) after Discharge in Participants with Chronic Kidney Disease treated for Hyperkalaemia.",
+   "sp": "AstraZeneca",
+   "nct": "NCT05347693",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Hyperkaliémie / acidose",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "IV",
+   "obs": false
+  },
+  {
+   "ac": "MLS-101-301",
+   "long": "ÉTUDE DE PHASE 3, RANDOMISÉE, EN DOUBLE AVEUGLE, CONTRÔLÉE CONTRE PLACEBO, À BRAS PARALLÈLES ET MULTICENTRIQUE, VISANT À ÉVALUER L'EFFICACITÉ ET LA SÉCURITÉ D'EMPLOI DU LORUNDROSTAT CHEZ DES PATIENTS ATTEINTS D'HYPERTENSION RÉSISTANTE ET NON CONTRÔLÉE",
+   "sp": "MINERALYS THERAPRITICS",
+   "nct": "NCT06153693",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "NELLY",
+   "long": "Impact médico-économique du service nelly pour la maladie rénale chronique sévère non dialysée",
+   "sp": "calydial",
+   "nct": "NCT00486681",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "k": [],
+   "type": "Hors Produit de Santé RIPH 3",
+   "obs": true
+  },
+  {
+   "ac": "OTSUKA-PASS",
+   "long": "Étude de sécurité d'emploi après autorisation, non interventionnelle, multicentrique, d'une durée de 9 ans menée chez des patients ayant Oreçu du JINARC® sur ordonnance pour une polykystose rénale autosomique dominante",
+   "sp": "Otsuka Pharmaceutical Europe Ltd",
+   "nct": "NCT01457885",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique II / III",
+   "obs": true
+  },
+  {
+   "ac": "POSIBIL6ESKD",
+   "long": "Étude de Phase 2b / 3, Multicentrique, Randomisée, en Double Aveugle, Contrôlée par Placebo, de Recherche de Dose Combinée et d'Issue Cardiovasculaire pour Étudier l'Efficacité et la Sécurité de CSL300 (Clazakizumab) chez des Sujets Atteints de Maladie Rénale Terminale Soumis à Dialyse",
+   "sp": "CSL Behring LLC",
+   "nct": "NCT05485961",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Balkis Ouled Bouhedda",
+     "r": "Contact de l'étude",
+     "e": "balkis.ouled-bouhedda@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique II / III",
+   "obs": false
+  },
+  {
+   "ac": "QUIgAN",
+   "long": "Effet thérapeutique de l'hydroxychloroquine sur l'évolution de la néphropathie à IgA Étude QUIgAN",
+   "sp": "CHU Saint Etienne",
+   "nct": "NCT06350630",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nicolas Maillard",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Balkis Ouled Bouhedda",
+     "r": "Contact de l'étude",
+     "e": "balkis.ouled-bouhedda@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "REPLY",
+   "long": "Étude prospective multicentrique randomisée évaluant l'efficacité d'un traitement préventif par Rituximab chez des patients transplantés rénaux EBV négatifs sur l'incidence de la primoinfection EBV et des syndromes lymphoprolifératifs",
+   "sp": "CHU Strasbourg",
+   "nct": "NCT04989491",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Infections post-greffe"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Wafa Ibrahim",
+     "r": "Contact de l'étude",
+     "e": "wafa.ibrahim@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Non Applicable",
+   "obs": false
+  },
+  {
+   "ac": "THINK",
+   "long": "intensification des traitements antihypertenseurs à base de diurétiques par rapport à la prise en charge habituelle de l'hypertension non contrôlée chez les patients atteints de maladie rénale chronique modérée à sévère : un essai en ouvert, contrôlé randomisé en cluster, de phase 3",
+   "sp": "University Hospital of Tours",
+   "nct": "NCT05732727",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Balkis Khammassi",
+     "r": "Contact de l'étude",
+     "e": "balkis.ouled-bouhedda@chu-st-etienne.fr"
+    }
+   ],
+   "type": "Thérapeutique / III",
+   "obs": false
+  },
+  {
+   "ac": "TIPS",
+   "long": "Profil métabolique du tacrolimus en transplantation rénale : investigations mécanistiques",
+   "sp": "CHU de grenoble",
+   "nct": "NCT04526431",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance"
+   ],
+   "k": [
+    {
+     "n": "Christophe Mariat",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Balkis Khammassi",
+     "r": "Contact de l'étude",
+     "e": "balkis.ouled-bouhedda@chu-st-etienne.fr"
+    }
+   ],
+   "type": "IV",
+   "obs": false
+  },
+  {
+   "ac": "VISIONARY 417-201-00012",
+   "long": "Essai de phase 2/3, multicentrique, en ouvert, visant à évaluer la sécurité d'emploi à long terme, la tolérance et l'efficacité du sibeprenlimab administré par voie sous-cutanée chez des sujets atteints de néphropathie à immunoglobuline A (IgA)",
+   "sp": "OTSUKA",
+   "nct": "NCT05248659",
+   "url": "https://www.chu-st-etienne.fr/rechercheclinique/essaisCliniques/accueil",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nicolas Maillard",
+     "r": "Investigateur principal"
+    }
+   ],
+   "type": "Thérapeutique II / III",
+   "obs": false
+  }
+ ]
+}

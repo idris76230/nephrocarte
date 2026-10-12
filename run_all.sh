@@ -16,6 +16,9 @@ python3 -I scripts/phrc_ctgov.py data/phrc_nephro.json data/raw/ctgov_phrc.json 
 { python3 -I scripts/brest_crawl.py data/raw/brest_pages.json &&
   python3 -I scripts/brest_parse.py data/raw/brest_pages.json data/local/brest.json | head -1; } || warn "pages recherche CHU de Brest"
 
+# pages « essais cliniques » des centres (Saint-Luc, UZ Leuven, CHU de Saint-Étienne) ; un site en panne garde sa dernière version
+python3 -I scripts/sites.py data/local || warn "pages essais cliniques des centres"
+
 # corrections validées dans le Google Sheet des signalements du site
 SHEET_CSV="https://docs.google.com/spreadsheets/d/e/2PACX-1vTPesbkiRJZhe8qTk_n57fSsjNItRtGuG-QjF8YMSY2dUGTpfdfN4jEisn2xVE_w3HiHHzYNcsrLCAu/pub?gid=227078854&single=true&output=csv"
 python3 -I scripts/sheet_corrections.py "$SHEET_CSV" data/corrections_formulaire.json || warn "Google Sheet des signalements"

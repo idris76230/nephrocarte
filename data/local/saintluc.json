@@ -1,0 +1,576 @@
+{
+ "source": "Cliniques universitaires Saint-Luc — études cliniques en cours",
+ "source_url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+ "centre": {
+  "f": "Cliniques universitaires Saint-Luc — Néphrologie",
+  "v": "Bruxelles",
+  "p": "BE",
+  "z": "1200",
+  "match": "saint[- ]?luc|st[- ]?luc|\\bucl\\b|uclouvain",
+  "k": []
+ },
+ "projects": [
+  {
+   "ac": "1378-0023",
+   "long": "Essai international de phase II randomisé, en double aveugle, en groupes parallèles et multicentrique visant à évaluer l'innocuité et l'efficacité du vicadrostat et de l'empagliflozine administrés simultanément ou de manière échelonnée chez des participants atteints d'une maladie rénale chronique et présentant un risque de progression de la maladie",
+   "sp": "Boehringer Ingelheim B.V.",
+   "proto": "1378-0023",
+   "nct": "NCT06926660",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Lucie Ruiz",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "FREXERA",
+   "long": "Étude de phase 2/3 randomisée, en ouvert, sans discontinuité, visant à évaluer l'efficacité et la sécurité d'emploi du frexalimab par rapport au tacrolimus chez des receveurs adultes d'une greffe de rein",
+   "sp": "Sanofi Aventis France",
+   "proto": "EFC18554",
+   "nct": "NCT07412470",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance"
+   ],
+   "k": [
+    {
+     "n": "Arnaud Devresse",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Lucie Ruiz",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "CPV-104-101",
+   "long": "Essai clinique de phase 1 chez l'humain : Évaluation de la sécurité, de la tolérabilité et de la pharmacocinétique du CPV-104 chez des volontaires sains et des patients atteints de glomérulopathie à dépôts de C3 (C3G)",
+   "sp": "Eleva Gmbh",
+   "proto": "CPV-104-101",
+   "nct": "NCT07483827",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulopathie à C3"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "VX24-407-101",
+   "long": "Étude de phase 2a, ouverte, à un seul bras, visant à évaluer l?efficacité, la sécurité et la pharmacocinétique du VX-407 chez des sujets atteints de polykystose rénale autosomique dominante porteurs d?un sous-ensemble de variants du gène PKD1.",
+   "sp": "VERTEX Pharmaceuticals Incorporated",
+   "proto": "VX24-407-101",
+   "nct": "NCT07161037",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "CFUB523A12302B",
+   "long": "Étude d'extension en ouvert multicentrique visant à évaluer la sécurité d'emploi et la tolérabilité à long terme du zigakibart chez les adultes atteints de néphropathie primaire à IgA",
+   "sp": "Novartis Pharma Ag",
+   "proto": "CFUB523A12302B",
+   "nct": "NCT06858319",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "PIONEER",
+   "long": "Phase 2 pour évaluer la sécurité et l'efficacité de l'Atacicept dans les maladies glomérulaires auto-immunes multiples (PIONEER)",
+   "sp": "Vera Therapeutics Inc",
+   "proto": "VT-001-0060",
+   "nct": "NCT06983028",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Lucie Ruiz",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "PREVAIL",
+   "long": "Phase 3, randomisée, en double aveugle, contrôlée par placebo pour évaluer la sécurité et l'efficacité du Felzartamab chez les adultes atteints de néphropathie à IgA (PREVAIL).",
+   "sp": "BIOGEN IDEC Limited, UK",
+   "proto": "299IG301",
+   "nct": "NCT06935357",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulonéphrite extramembraneuse",
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "RENEW-HD",
+   "long": "Investigation clinique multicentrique avec le système NEokidney avec régénération en boucle fermée du dialysat pour évaluer la performance et la sécurité de l'hémodialyse fréquente et courte",
+   "sp": "Nextkidney Bv",
+   "proto": "NKH.CI.2202",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Hémodialyse / HDF",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Eric Goffin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Lucie Ruiz",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "MAPLE",
+   "long": "Une étude multicentrique de phase 1a/1b randomisée, en double aveugle, contrôlée par placebo, avec dose unique ascendante, chez des participants sains et des participants atteints de la polykystose rénale autosomique dominante, visant à évaluer la sécurité, la tolérabilité, la pharmacocinétique et la pharmacodynamie du GSK4771261",
+   "sp": "Glaxosmithkline Research & Development Limited",
+   "proto": "221362",
+   "nct": "NCT06734234",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "M25-147",
+   "long": "Une étude multicentrique de phase 2, randomisée, en double aveugle, contrôlée par placebo, visant à évaluer la sécurité et l'efficacité de l'ABBV-CLS-628 chez des adultes atteints de la polykystose rénale autosomique dominante (ADPKD)",
+   "sp": "Calico Life Sciences Llc",
+   "proto": "M25-147",
+   "nct": "NCT06902558",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "ENIGMA",
+   "long": "Étude de la relation entre la composition du microbiote intestinal et la réponse aux traitements immunosuppresseurs après transplantation rénale",
+   "sp": "Universite Catholique De Louvain",
+   "proto": "ENIGMA",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal",
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Arnaud Devresse",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Marie-Agnès Ronsyn",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "DYNAMICA",
+   "long": "Association entre la cachexie et le microbiome intestinal chez les patients dialysés : études des interactions avec les toxines urémiques et l?inflammation",
+   "sp": "Universite Catholique De Louvain",
+   "proto": "DYNAMICA",
+   "nct": "NCT06986265",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Inès Dufour",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Anastazja Wisniewska",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "BaxDuo-Pacific",
+   "long": "Étude de phase III, randomisée, en double aveugle, contrôlée par placebo et axée sur les événements, visant à évaluer l'efficacité, l'innocuité et la tolérance du Baxdrostat en association avec la dapagliflozine par rapport à la dapagliflozine seule sur les résultats rénaux et la mortalité cardiovasculaire chez les participants atteints d'IRC et d'hypertension artérielle.",
+   "sp": "Astrazeneca Ab",
+   "proto": "D6972C00002",
+   "nct": "NCT06742723",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "PREDICT",
+   "long": "PERCUTANEOUS PERITONEAL DIALYSIS CATHETER INSERTION",
+   "sp": "Uz Brussel",
+   "proto": "PREDICT",
+   "nct": "NCT03056612",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Dialyse / suppléance"
+   ],
+   "pa": [
+    "Abord vasculaire",
+    "Dialyse péritonéale"
+   ],
+   "k": [
+    {
+     "n": "Eric Goffin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Marie-Agnès Ronsyn",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "HYDRO-PROTECT",
+   "long": "HYDROchlorothiazide to PROTECT polycystic kidney disease patients and improve their quality of life",
+   "sp": "University Medical Center Groningen",
+   "proto": "HYDRO-PROTECT",
+   "nct": "NCT05373264",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "DECODE",
+   "long": "prédicteurs de diabète sucré post-transplantation",
+   "sp": "Uz Antwerpen",
+   "proto": "DECODE",
+   "nct": "NCT06440330",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Nada Kanaan",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Celine D'aoust",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": true
+  },
+  {
+   "ac": "ICIR",
+   "long": "A prospective cohort, explorative, multicentric and therapeutically non interventional study aimed at investigating the alloimmune response in renal transplants patients treated with immune checkpoint inhibitors for cancer and set up of an international registry",
+   "sp": "ERASME: CUB Hôpital Erasme-Université LIbre de Bruxelles",
+   "proto": "ICIR",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Arnaud Devresse",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Anastazja Wisniewska",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": true
+  },
+  {
+   "ac": "VX21-147-301",
+   "long": "Une étude adaptative de phase 2/3, en double aveugle et contrôlée par placebo, visant à évaluer l'efficacité et la sécurité du VX-147 chez des sujets âgés de 18 ans et plus souffrant d'une maladie rénale protéinurique médiée par APOL1",
+   "sp": "VERTEX Pharmaceuticals Incorporated",
+   "proto": "VX21-147-301",
+   "nct": "NCT05312879",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Arnaud Devresse",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Sarah Rahal",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": false
+  },
+  {
+   "ac": "genCOL study",
+   "long": "Deep genotype and phenotype study of carriers of heterozygous mutations in collagen IVa3-5",
+   "sp": "Cliniques Universitaires Saint Luc",
+   "proto": "GENCOL STUDY",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Valentine Gillion",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Anastazja Wisniewska",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": true
+  },
+  {
+   "ac": "AbCMV-KT",
+   "long": "Analysis of Antibody-mediated immunity against human Cytomegalovirus in Kidney Transplant patients: a Systems Serology approach",
+   "sp": "ERASME: CUB Hôpital Erasme-Université LIbre de Bruxelles",
+   "proto": "ABCMV-KT",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Infections post-greffe",
+    "Rejet / désimmunisation"
+   ],
+   "k": [
+    {
+     "n": "Arnaud Devresse",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Yannick France",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": true
+  },
+  {
+   "ac": "Biopsie rénale",
+   "long": "Constitution d'une banque de sérum, plasma, ADN et tissu rénal pour les patients bénéficiant d'une biopsie rénale ou atteints d'un syndrome néphrologique ou systémique bien défini.",
+   "sp": "Cliniques Universitaires Saint Luc",
+   "proto": "2",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Nathalie Demoulin",
+     "r": "Investigateur principal"
+    },
+    {
+     "n": "Anastazja Wisniewska",
+     "r": "Coordinateur de recherche"
+    }
+   ],
+   "obs": true
+  },
+  {
+   "ac": "DP",
+   "long": "« Constitution d'une biobanque pour les patients en dialyse péritonéale » Setup of a biobank for peritoneal dialysis patients.",
+   "sp": "Cliniques Universitaires Saint Luc",
+   "proto": "VERSION 1",
+   "nct": "",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8303",
+   "th": [
+    "Dialyse / suppléance"
+   ],
+   "pa": [
+    "Dialyse péritonéale"
+   ],
+   "k": [
+    {
+     "n": "Eric Goffin",
+     "r": "Investigateur principal"
+    }
+   ],
+   "obs": true
+  },
+  {
+   "ac": "HMPO2",
+   "long": "A prospective feasibility trial to compare the efficacy of intermittent surface oxygenation with continuous surface oxygenation during hypothermic machine perfusion of kidneys donated after circulatory death.",
+   "sp": "Cliniques Universitaires Saint Luc",
+   "proto": "HMPO2",
+   "nct": "NCT05430620",
+   "url": "https://saintluc.be/fr/clinical-study?field_cs_service=8344",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Tom Darius",
+     "r": "Investigateur principal"
+    }
+   ],
+   "obs": false
+  }
+ ]
+}

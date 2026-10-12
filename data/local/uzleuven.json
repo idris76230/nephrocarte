@@ -1,0 +1,372 @@
+{
+ "source": "UZ Leuven — klinische studies nefrologie",
+ "source_url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies",
+ "centre": {
+  "f": "UZ Leuven — Nefrologie",
+  "v": "Louvain",
+  "p": "BE",
+  "z": "3000",
+  "match": "leuven|louvain|gasthuisberg",
+  "k": [
+   {
+    "n": "Studiecoördinatoren nefrologie",
+    "r": "CONTACT",
+    "e": "RDNefro@uzleuven.be",
+    "t": "+32 16 34 56 75"
+   }
+  ]
+ },
+ "projects": [
+  {
+   "ac": "ANCHOR",
+   "long": "Een fase 2, multicenter, gerandomiseerde, dubbelblinde, placebo-gecontroleerde studie naar de veiligheid en werkzaamheid van ABBV‑CLS‑628 bij volwassen patiënten met autosomaal dominante polycystische nierziekte (ADPKD).",
+   "sp": "Abbvie",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/adpkd",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "AGLOW",
+   "long": "Een fase 2a, open-label studie naar de werkzaamheid, veiligheid en farmacokinetiek van VX-407 bij patiënten met autosomaal dominante polycystische nierziekte met een subset van PKD1-genvarianten.",
+   "sp": "Vertex",
+   "nct": "NCT07161037",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/adpkd",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "APERTURE",
+   "long": "Een studie naar de prevalentie en klinische kenmerken geassocieerd met PKD1-genvariantgroepen bij autosomaal dominante polycystische nierziekte (ADPKD).",
+   "sp": "Vertex",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/adpkd",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": true
+  },
+  {
+   "ac": "MAPLE",
+   "long": "Een gerandomiseerde, dubbelblinde, placebo-gecontroleerde fase 1a/1b-studie met enkelvoudige dosis ter evaluatie van de veiligheid, verdraagbaarheid, farmacokinetiek en farmacodynamiek van GSK4771261 bij gezonde vrijwilligers en patiënten met autosomaal dominante polycystische nierziekte.",
+   "sp": "GSK",
+   "nct": "NCT06734234",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/adpkd",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "HYDRO PROTECT",
+   "long": "HYDRO-PROTECT-studie: een fase III, dubbelblinde, placebo-gecontroleerde studie naar de toevoeging van hydrochloorthiazide aan tolvaptan bij autosomaal dominante polycysteuze nierziekte.",
+   "sp": "University Medical Center of Groningen",
+   "nct": "NCT05373264",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/adpkd",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "AMPLITUDE",
+   "long": "Een adaptieve, dubbelblinde, placebo‑gecontroleerde fase 2/3‑studie ter evaluatie van de werkzaamheid en veiligheid van VX‑147 bij volwassen en pediatrische patiënten met APOL1‑gemedieerde proteïnurie.",
+   "sp": "Vertex",
+   "nct": "NCT05312879",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "obs": false
+  },
+  {
+   "ac": "RENAL LIFE CYCLO",
+   "long": "De RENAL LIFECYCLE-studie: een fase III, dubbelblinde, placebo-gecontroleerde studie naar het effect van dapagliflozine op nier- en hartfalen bij patiënten met ernstige chronische nierziekte.",
+   "sp": "University Medical Center Groningen",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal",
+    "Transplantation"
+   ],
+   "pa": [],
+   "obs": false
+  },
+  {
+   "ac": "SYNC-EASY",
+   "long": "Een fase II, gerandomiseerde, dubbelblinde, multicenterstudie naar de veiligheid en werkzaamheid van vicadrostat in combinatie met empagliflozine bij patiënten met chronische nierziekte met risico op ziekteprogressie.",
+   "sp": "Boehringer",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [],
+   "obs": false
+  },
+  {
+   "ac": "ARTIC",
+   "long": "Een fase III, gerandomiseerde, dubbelblinde studie ter beoordeling van de werkzaamheid, veiligheid en verdraagbaarheid van baxdrostat in combinatie met dapagliflozine, vergeleken met dapagliflozine alleen, op de progressie van chronische nierziekte bij patiënten met chronische nierziekte en hoge bloeddruk.",
+   "sp": "AstraZeneca",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "PACIFIC",
+   "long": "Een fase III, gerandomiseerde, dubbelblinde, placebo‑gecontroleerde, event‑drive studie ter beoordeling van de werkzaamheid, veiligheid en verdraagbaarheid van baxdrostat in combinatie met dapagliflozine, vergeleken met dapagliflozine alleen, op de nierfunctie en cardiovasculaire mortaliteit bij patiënten met chronische nierziekte en hoge bloeddruk.",
+   "sp": "AstraZeneca",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "ATTAIN",
+   "long": "Een fase‑3, gerandomiseerde, dubbelblinde, placebogecontroleerde studie naar het effect van orforglipron op cardiovasculaire uitkomsten bij volwassenen met atherosclerotische cardiovasculaire ziekte en/of chronische nierziekte (ATTAIN‑Outcomes).",
+   "sp": "Eli Lilly",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "PIONEER",
+   "long": "Een fase 2, open-label, multicenter studie naar de veiligheid en werkzaamheid van atacicept bij multiple auto-immuunglomerulaire aandoeningen.",
+   "sp": "Vera Therapeutics",
+   "nct": "NCT06983028",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/iga",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulonéphrite extramembraneuse",
+    "HSF / syndrome néphrotique",
+    "Néphropathie à IgA"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "PREVAIL",
+   "long": "Een fase 3, gerandomiseerde, dubbelblinde, placebo‑gecontroleerde studie naar de veiligheid en werkzaamheid van felzartamab bij volwassen patiënten met IgA‑nefropathie.",
+   "sp": "Biogen",
+   "nct": "NCT06935357",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/iga",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "I CAN",
+   "long": "Een fase 3, gerandomiseerde, dubbelblinde, placebo-geconoleerde studie ter evaluatie van de werkzaamheid en veiligheid van ravulizumab bij volwassen patiënten met immunoglobuline A-nefropathie (IgAN).",
+   "sp": "Biogen",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/iga",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "CLS300",
+   "long": "Een fase‑2b/3, multicenter, gerandomiseerde, dubbelblinde, placebogecontroleerde studie naar de effectiviteit en veiligheid van clazakizumab (CSL300) bij hemodialysepatiënten met eindstadium nierfalen en verhoogd cardiovasculair risico.",
+   "sp": "Behring",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/nierdialyse",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "Pilot‑OMAGOD",
+   "long": "Pilot‑OMAGOD: een multicenter, gerandomiseerde, enkelblinde cross‑overstudie naar het effect van aanpassing van de magnesiumconcentratie in citraatgebaseerd dialysaat op serum‑magnesium bij hemodialysepatiënten.",
+   "sp": "",
+   "nct": "NCT07206524",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/nierdialyse",
+   "th": [
+    "Dialyse / suppléance"
+   ],
+   "pa": [],
+   "obs": false
+  },
+  {
+   "ac": "SODIAH",
+   "long": "SODIAH (HD‑NaM‑01‑EU): een multicenter, gerandomiseerde studie naar het effect van geïndividualiseerd natriumbeheer ten opzichte van standaardbehandeling bij hemodialysepatiënten.",
+   "sp": "Fresenius",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/nierdialyse",
+   "th": [
+    "Dialyse / suppléance"
+   ],
+   "pa": [],
+   "obs": false
+  },
+  {
+   "ac": "TX200‑KT03",
+   "long": "Langetermijnopvolging na autologe CAR‑Treg‑celtherapie bij niertransplantatie.",
+   "sp": "Sangamo",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "ARGX-113-2302",
+   "long": "Efgartigimod PH20 SC bij antistof-gemedieerde afstoting na niertransplantatie",
+   "sp": "Argenx",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Donneur / préservation du greffon",
+    "Immunosuppression / tolérance"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "MARIBEL",
+   "long": "Real‑world gebruik van maribavir bij post‑transplantatie CMV‑infectie",
+   "sp": "Takeda",
+   "nct": "NCT06677892",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Infections post-greffe"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "MARIBAVIR",
+   "long": "Retrospectieve veiligheidsstudie van maribavir bij post‑transplantatie CMV en ernstige nierinsufficiëntie.",
+   "sp": "Takeda",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
+   "th": [
+    "Dialyse / suppléance",
+    "Transplantation"
+   ],
+   "pa": [
+    "Infections post-greffe"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "FREXERA",
+   "long": "Frexalimab versus tacrolimus bij niertransplantatie (fase 2/3‑studie)",
+   "sp": "Sanofi",
+   "nct": "NCT07412470",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "DECODE",
+   "long": "Voorspellen van post‑transplantatie diabetes mellitus na niertransplantatie",
+   "sp": "University Hospital Antwerp",
+   "nct": "NCT06440330",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
+   "th": [
+    "Transplantation"
+   ],
+   "pa": [],
+   "obs": false
+  },
+  {
+   "ac": "PODOMOUNT",
+   "long": "PODOMOUNT‑Basket: een fase‑II, multicenter, gerandomiseerde, dubbelblinde, placebogecontroleerde basketstudie naar de veiligheid en werkzaamheid van BI 764198 bij nierziekten met proteinurie.",
+   "sp": "Boehringer Ingelheim",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/andere-pathologie",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Glomérulonéphrite extramembraneuse",
+    "HSF / syndrome néphrotique",
+    "Progression de la MRC",
+    "Syndrome d'Alport"
+   ],
+   "obs": false
+  },
+  {
+   "ac": "TRPC",
+   "long": "Een fase‑III, multicenter, gerandomiseerde, dubbelblinde, placebogecontroleerde studie naar het effect van de orale TRPC6‑remmer BI 764198 bij volwassenen en adolescenten met primaire focale segmentale glomerulosclerose (pFSGS) of genetische FSGS geassocieerd met TRPC6‑mutaties.",
+   "sp": "Boehringer Ingelheim",
+   "nct": "",
+   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/andere-pathologie",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "obs": false
+  }
+ ]
+}

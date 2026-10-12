@@ -1,4 +1,4 @@
-import json, sys, unicodedata
+import json, re, sys, unicodedata
 def k(s): return unicodedata.normalize("NFKD", s).encode("ascii","ignore").decode().lower().strip()
 M = {"bron":"Lyon","pierre-benite":"Lyon","lyon":"Lyon","vandoeuvre-les-nancy":"Nancy","vandœuvre-lès-nancy":"Nancy","nancy":"Nancy",
  "brussels":"Bruxelles","bruxelles":"Bruxelles","brussel":"Bruxelles","jette":"Bruxelles","anderlecht":"Bruxelles","woluwe-saint-lambert":"Bruxelles","ixelles":"Bruxelles",
@@ -7,7 +7,8 @@ M = {"bron":"Lyon","pierre-benite":"Lyon","lyon":"Lyon","vandoeuvre-les-nancy":"
  "le kremlin-bicetre":"Paris & IDF","creteil":"Paris & IDF","boulogne-billancourt":"Paris & IDF","clichy":"Paris & IDF","suresnes":"Paris & IDF","garches":"Paris & IDF","bobigny":"Paris & IDF","villejuif":"Paris & IDF","colombes":"Paris & IDF","le chesnay":"Paris & IDF","saint-denis":"Paris & IDF","paris":"Paris & IDF","neuilly-sur-seine":"Paris & IDF","bondy":"Paris & IDF","levallois-perret":"Paris & IDF","montreuil":"Paris & IDF","massy":"Paris & IDF","evry":"Paris & IDF","corbeil-essonnes":"Paris & IDF","argenteuil":"Paris & IDF","pontoise":"Paris & IDF","le plessis-robinson":"Paris & IDF","poissy":"Paris & IDF","versailles":"Paris & IDF",
  "vandoeuvre les nancy":"Nancy","lille":"Lille","loos":"Lille","montpellier":"Montpellier","toulouse":"Toulouse","marseille":"Marseille","nice":"Nice"}
 def city(raw):
-    return "Nancy" if "nancy" in k(raw) else M.get(k(raw), raw.strip().title() if raw.isupper() or raw.islower() else raw.strip())
+    key = k(raw); alt = re.sub(r"^st[ .-]+", "saint-", key).replace(" ", "-")  # « St Etienne » -> « saint-etienne »
+    return "Nancy" if "nancy" in key else M.get(key) or M.get(alt) or (raw.strip().title() if raw.isupper() or raw.islower() else raw.strip())
 
 if __name__ == "__main__":
     r = json.load(open(sys.argv[1]))
