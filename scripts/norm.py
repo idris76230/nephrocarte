@@ -7,6 +7,7 @@ M = {"bron":"Lyon","pierre-benite":"Lyon","lyon":"Lyon","vandoeuvre-les-nancy":"
  "le kremlin-bicetre":"Paris & IDF","creteil":"Paris & IDF","boulogne-billancourt":"Paris & IDF","clichy":"Paris & IDF","suresnes":"Paris & IDF","garches":"Paris & IDF","bobigny":"Paris & IDF","villejuif":"Paris & IDF","colombes":"Paris & IDF","le chesnay":"Paris & IDF","saint-denis":"Paris & IDF","paris":"Paris & IDF","neuilly-sur-seine":"Paris & IDF","bondy":"Paris & IDF","levallois-perret":"Paris & IDF","montreuil":"Paris & IDF","massy":"Paris & IDF","evry":"Paris & IDF","corbeil-essonnes":"Paris & IDF","argenteuil":"Paris & IDF","pontoise":"Paris & IDF","le plessis-robinson":"Paris & IDF","poissy":"Paris & IDF","versailles":"Paris & IDF",
  "vandoeuvre les nancy":"Nancy","lille":"Lille","loos":"Lille","montpellier":"Montpellier","toulouse":"Toulouse","marseille":"Marseille","nice":"Nice"}
 def city(raw):
+    raw = re.sub(r"\s+cedex\b.*$", "", raw, flags=re.I).strip()  # « St Etienne Cedex 2 »
     key = k(raw); alt = re.sub(r"^st[ .-]+", "saint-", key).replace(" ", "-")  # « St Etienne » -> « saint-etienne »
     return "Nancy" if "nancy" in key else M.get(key) or M.get(alt) or (raw.strip().title() if raw.isupper() or raw.islower() else raw.strip())
 
