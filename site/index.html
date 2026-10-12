@@ -123,6 +123,11 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
 .rep-btns{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .go.small{font-size:15px;padding:9px 18px;margin-left:0;text-decoration:none}
 .more.inline{display:inline-block;margin:0;font-size:14px;padding:8px 14px}
+.rep-more{border:1px dashed var(--line);border-radius:6px;padding:12px 16px}
+.rep-more>summary{cursor:pointer;font:600 15px var(--f-label);color:var(--accent)}
+.rep-more[open]>summary{margin-bottom:14px}
+.rep-more>.grid{display:grid;gap:16px}
+.rep-ok{margin:0;background:var(--field);border-left:4px solid var(--lime);border-radius:4px;padding:12px 16px}
 #rep-text{margin:0;white-space:pre-wrap;font:13px/1.5 var(--f-mono);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:12px;max-height:240px;overflow:auto}
 .foot{margin-top:46px;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .foot section{border-top:3px solid var(--lime);padding-top:12px;display:grid;gap:8px;font-size:14px;min-width:0}
@@ -201,7 +206,7 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
 <section class="report" id="signaler" aria-labelledby="rep-h">
   <div class="rep-intro">
     <h2 id="rep-h">Signaler une étude ou une mise à jour</h2>
-    <p>Une étude manque, un centre a ouvert ou fermé, un contact a changé : envoyez l'information à la commission clinique. Le message est préparé dans votre messagerie, adressé à <span class="addr" id="rep-to">idris.boudhabhay@aphp.fr</span>.</p>
+    <p>Une étude manque, un centre a ouvert ou fermé, un contact a changé : envoyez l'information à la commission clinique. Chaque signalement est relu avant d'être intégré à l'outil.</p>
   </div>
   <form class="card" id="rep-form">
     <div class="row">
@@ -214,11 +219,30 @@ textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)
         <option>Ajouter une étude</option><option>Mettre à jour le statut de recrutement</option><option>Ajouter mon centre à une étude</option><option>Corriger un contact</option><option>Signaler une erreur de classement</option><option>Autre</option></select></div>
     </div>
     <div class="field"><label for="r-study">Étude concernée <span class="opt">(acronyme, NCT ou EU CT)</span></label><input type="text" id="r-study" placeholder="Ex : HYPERSHU — NCT05726916"></div>
-    <div class="field"><label for="r-msg">Message</label><textarea id="r-msg" rows="5" required placeholder="Ex : le centre de Rennes a ouvert le 15 septembre ; contact : Dr X, attaché de recherche clinique, 02 99 …"></textarea></div>
+    <details class="rep-more" id="rep-more">
+      <summary>Mise à jour d'un centre <span class="opt">(facultatif : remplissez pour ouvrir, fermer ou ajouter un centre, ou changer un contact)</span></summary>
+      <div class="grid">
+        <div class="row">
+          <div class="field"><label for="r-etab">Établissement concerné</label><input type="text" id="r-etab" list="facilities" placeholder="Ex : CHU de Rennes"></div>
+          <div class="field"><label for="r-ville">Ville</label><input type="text" id="r-ville" list="cities" placeholder="Ex : Rennes"></div>
+          <div class="field"><label for="r-statut">Statut du centre</label><select id="r-statut"><option value="">—</option><option>Ouvert</option><option>À venir</option><option>Sur invitation</option><option>Fermé</option></select></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="r-cnom">Contact – nom</label><input type="text" id="r-cnom" placeholder="Ex : Dr Marie Martin"></div>
+          <div class="field"><label for="r-crole">Contact – fonction</label><input type="text" id="r-crole" placeholder="Ex : investigatrice, ARC, TEC"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="r-cmail">Contact – e-mail <span class="opt">(professionnel)</span></label><input type="text" id="r-cmail" inputmode="email"></div>
+          <div class="field"><label for="r-ctel">Contact – téléphone <span class="opt">(professionnel)</span></label><input type="text" id="r-ctel" inputmode="tel"></div>
+        </div>
+      </div>
+    </details>
+    <div class="field"><label for="r-msg">Message <span class="opt">(facultatif si la mise à jour ci-dessus suffit)</span></label><textarea id="r-msg" rows="5" placeholder="Ex : le centre de Rennes a ouvert le 15 septembre ; ou : étude à ajouter, NCT…"></textarea></div>
     <p class="rep-err" id="rep-err" hidden></p>
-    <div class="actions"><span class="hint">Aucune donnée patient : ne mentionnez jamais d'information permettant d'identifier un patient.</span><button class="go" type="submit">Préparer le message</button></div>
+    <div class="actions"><span class="hint">Aucune donnée patient : ne mentionnez jamais d'information permettant d'identifier un patient.</span><button class="go" type="submit" id="rep-send">Envoyer</button></div>
+    <p class="rep-ok" id="rep-ok" role="status" hidden><b>Merci, votre signalement a été transmis.</b> Il sera relu par la commission clinique avant intégration.</p>
     <div class="rep-out" id="rep-out" hidden>
-      <p><b>Votre message est prêt.</b> Si votre messagerie ne s'est pas ouverte, copiez le message et envoyez-le à <span class="addr">idris.boudhabhay@aphp.fr</span>.</p>
+      <p><b>L'envoi n'a pas abouti</b> (connexion ou réseau d'établissement filtrant). Envoyez le message ci-dessous par e-mail à <span class="addr">idris.boudhabhay@aphp.fr</span>.</p>
       <div class="rep-btns"><a class="go small" id="rep-mailto" href="#">Ouvrir ma messagerie</a><button type="button" class="more inline" id="rep-copy">Copier le message</button><button type="button" class="more inline" id="rep-copyaddr">Copier l'adresse</button></div>
       <pre id="rep-text"></pre>
     </div>
@@ -439,30 +463,52 @@ document.addEventListener("click", e => {
 function selectText(b){ const s = b.previousElementSibling; const r = document.createRange(); r.selectNodeContents(s); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); }
 run(false);
 
-/* ---------- formulaire de signalement : prépare un e-mail (aucune donnée n'est stockée) ---------- */
+/* ---------- formulaire de signalement : envoyé au formulaire Google de la commission (réponses dans un Google Sheet, relues avant intégration) ---------- */
 const TO = "idris.boudhabhay@aphp.fr";
+const GFORM = "https://docs.google.com/forms/d/e/1FAIpQLSegObZdDqiNzXWTI9mZRf9WuYFBKJO5FqZPopWFwT7Zccgt1A/formResponse";
+const GFIELDS = {"r-name": 1775878206, "r-mail": 1624583838, "r-centre": 996695449, "r-type": 1756968765, "r-study": 2079689082,
+  "r-etab": 1907808568, "r-ville": 1100395034, "r-statut": 1054624172, "r-cnom": 89091288, "r-crole": 1536835348,
+  "r-cmail": 1376889067, "r-ctel": 2121627539, "r-msg": 1493724420};
+const GLABELS = {"r-centre": "Centre / service", "r-type": "Type de demande", "r-study": "Étude", "r-etab": "Établissement concerné", "r-ville": "Ville",
+  "r-statut": "Statut du centre", "r-cnom": "Contact", "r-crole": "Fonction", "r-cmail": "E-mail du contact", "r-ctel": "Téléphone du contact"};
 function copyText(text, btn){
   const done = () => { const t = btn.textContent; btn.textContent = "Copié"; setTimeout(() => btn.textContent = t, 1500); };
   try { navigator.clipboard.writeText(text).then(done, () => {}); } catch {}
 }
-$("rep-form").addEventListener("submit", e => {
+$("rep-form").addEventListener("submit", async e => {
   e.preventDefault();
   const v = id => $(id).value.trim();
-  const err = !v("r-name") ? "Indiquez votre nom." : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("r-mail")) ? "Indiquez une adresse e-mail valide." : !v("r-msg") ? "Écrivez votre message." : "";
+  const centreUpd = ["r-etab", "r-statut", "r-cnom", "r-cmail", "r-ctel"].some(v);
+  const err = !v("r-name") ? "Indiquez votre nom." : !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("r-mail")) ? "Indiquez une adresse e-mail valide."
+    : !v("r-msg") && !centreUpd ? "Écrivez votre message ou remplissez la mise à jour d'un centre."
+    : centreUpd && !v("r-study") ? "Indiquez l'étude concernée." : centreUpd && !v("r-etab") ? "Indiquez l'établissement concerné."
+    : v("r-cmail") && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("r-cmail")) ? "L'e-mail du contact n'est pas valide." : "";
   $("rep-err").hidden = !err; $("rep-err").textContent = err;
+  $("rep-ok").hidden = true; $("rep-out").hidden = true;
   if (err) return;
-  const subject = `[NéphroCarte] ${v("r-type")}${v("r-study") ? " — " + v("r-study") : ""}`;
-  const body = `Type de demande : ${v("r-type")}\nÉtude : ${v("r-study") || "—"}\nCentre / service : ${v("r-centre") || "—"}\n\n${v("r-msg")}\n\n—\n${v("r-name")}\n${v("r-mail")}`;
-  $("rep-text").textContent = `À : ${TO}\nObjet : ${subject}\n\n${body}`;
-  $("rep-mailto").href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-  $("rep-out").hidden = false;
-  $("rep-out").scrollIntoView({block: "nearest"});
+  const btn = $("rep-send"); btn.disabled = true; btn.textContent = "Envoi…";
+  const body = new URLSearchParams();
+  for (const [id, entry] of Object.entries(GFIELDS)) if (v(id)) body.append("entry." + entry, v(id));
+  try {
+    // réponse opaque (no-cors) : seule une erreur réseau est détectable
+    await fetch(GFORM, {method: "POST", mode: "no-cors", body});
+    $("rep-ok").hidden = false;
+    ["r-study", "r-etab", "r-ville", "r-statut", "r-cnom", "r-crole", "r-cmail", "r-ctel", "r-msg"].forEach(id => $(id).value = "");
+    $("rep-ok").scrollIntoView({block: "nearest"});
+  } catch {
+    const subject = `[NéphroCarte] ${v("r-type")}${v("r-study") ? " — " + v("r-study") : ""}`;
+    const lines = Object.keys(GLABELS).filter(v).map(id => `${GLABELS[id]} : ${v(id)}`).join("\n");
+    const text = `${lines}\n\n${v("r-msg")}\n\n—\n${v("r-name")}\n${v("r-mail")}`;
+    $("rep-text").textContent = `À : ${TO}\nObjet : ${subject}\n\n${text}`;
+    $("rep-mailto").href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
+    $("rep-out").hidden = false; $("rep-out").scrollIntoView({block: "nearest"});
+  } finally { btn.disabled = false; btn.textContent = "Envoyer"; }
 });
 $("rep-copy").onclick = e => copyText($("rep-text").textContent, e.currentTarget);
 $("rep-copyaddr").onclick = e => copyText(TO, e.currentTarget);
 document.addEventListener("click", e => {
   const b = e.target.closest("[data-report]"); if (!b) return;
-  $("r-study").value = b.dataset.report; $("r-type").value = "Mettre à jour le statut de recrutement";
+  $("r-study").value = b.dataset.report; $("r-type").value = "Mettre à jour le statut de recrutement"; $("rep-more").open = true;
   $("signaler").scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
   setTimeout(() => $("r-name").focus({preventScroll: true}), 400);
 });
