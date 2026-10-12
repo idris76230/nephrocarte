@@ -46,6 +46,8 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add app/data.json data/phrc_rapport.csv data/local data/corrections_formulaire.json site/index.html
           git diff --cached --quiet || git commit -m "Mise à jour automatique des données ($(date -u +%Y-%m-%d))"
+          # un envoi fait pendant la collecte (modification des scripts) : on se recale dessus avant de pousser
+          git pull --rebase -X theirs origin main || { git rebase --abort; git pull --no-rebase -X ours origin main; }
           git push
 
       - uses: actions/upload-pages-artifact@v3
