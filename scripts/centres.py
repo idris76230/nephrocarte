@@ -47,6 +47,7 @@ GENERIC = re.compile(r"^(\w+ )?(investigat\w*|research|clinical( trial| research
 
 def canon(c):
     v = clean_city(c["v"])
+    if v == "Paris & IDF" and str(c.get("z", "")).startswith("974"): v = "Saint-Denis (La Réunion)"  # Saint-Denis de La Réunion
     n = k(c["f"])
     if GENERIC.search(c["f"].strip()):
         return v, f"Site non nommé par le promoteur ({v}{', ' + c['z'] if c.get('z') else ''})"
@@ -73,9 +74,59 @@ for d in data:
         d["phrc"] = d.get("phrc") or "PHRC"
     elif d["fund"] in ("Académique (autre)", "KCE (Belgique)"):
         d["fund"] = "Académique"
-    seen = {}
     for c in d["ce"]:
         c["v"], c["e"] = canon(c)
+
+# « AP-HP (site non précisé) » (registre européen : « Assistance Publique Hôpitaux de Paris — service ») : l'hôpital est retrouvé
+# d'après les études où il est nommé — nom de l'investigateur, puis préfixe téléphonique, puis code postal du site.
+GEN = "AP-HP (site non précisé)"
+def person(n): return " ".join(sorted(re.findall(r"[a-z]{2,}", k(re.sub(r"\b(dr|pr|prof|md|phd|mme|mr|m)\b\.?", " ", n or "", flags=re.I)))))
+def prefix(t):
+    t = re.sub(r"\D", "", t or "")
+    t = re.sub(r"^(00)?33(0)?", "0", t)
+    if len(t) == 9 and t[0] in "1234567": t = "0" + t
+    return t[:6] if len(t) == 10 and t.startswith("01") else ""
+learn = {"n": collections.defaultdict(collections.Counter), "t": collections.defaultdict(collections.Counter), "z": collections.defaultdict(collections.Counter)}
+for d in data:
+    for c in d["ce"]:
+        if c["e"].endswith("(AP-HP)"):
+            for x in c["k"]:
+                if person(x.get("n")): learn["n"][person(x.get("n"))][c["e"]] += 1
+                if prefix(x.get("t")): learn["t"][prefix(x.get("t"))][c["e"]] += 1
+            if c.get("z"): learn["z"][str(c["z"])][c["e"]] += 1
+def vote(kind, key, nmin):
+    cnt = learn[kind].get(key)
+    if not cnt: return None
+    h, n = cnt.most_common(1)[0]
+    return h if n >= nmin and n / sum(cnt.values()) >= 0.8 else None
+import os
+ann = json.load(open(os.path.join(os.path.dirname(__file__), "..", "data", "aphp_annuaire.json")))
+ANN_N = {person(n): h for n, h in ann.get("personnes", {}).items()}
+ANN_T = ann.get("telephones", {})
+def where(x):
+    return ANN_N.get(person(x.get("n"))) or vote("n", person(x.get("n")), 1) or ANN_T.get(prefix(x.get("t"))) or vote("t", prefix(x.get("t")), 2)
+resolved = 0
+for d in data:
+    out = []
+    for c in d["ce"]:
+        if c["e"] != GEN: out.append(c); continue
+        groups = collections.defaultdict(list)
+        for x in c["k"]: groups[where(x)].append(x)
+        hosp = [h for h in groups if h]
+        if not hosp:
+            h = vote("z", str(c.get("z", "")), 3)
+            if h: hosp, groups = [h], {h: c["k"]}
+        if not hosp: out.append(c); continue
+        if len(hosp) == 1 and groups.get(None): groups[hosp[0]] += groups.pop(None)  # contacts non reconnus : même site
+        for h in hosp:
+            out.append(dict(c, e=h, k=groups[h], devine=1)); resolved += 1
+        if groups.get(None): out.append(dict(c, k=groups[None]))
+    d["ce"] = out
+print(f"AP-HP sans site précisé : {resolved} sites rattachés à un hôpital", end=" ; ")
+
+for d in data:
+    seen = {}
+    for c in d["ce"]:
         # un établissement apparaît une seule fois par étude (plusieurs services -> on garde le meilleur statut / contacts)
         prev = seen.get(c["e"])
         if prev is None: seen[c["e"]] = c

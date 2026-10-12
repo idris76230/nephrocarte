@@ -1,0 +1,16 @@
+{
+ "_aide": [
+  "Complète le rattachement des sites « AP-HP (site non précisé) » quand l'outil ne peut pas le déduire des autres études (scripts/centres.py).",
+  "personnes : nom de l'investigateur (tel qu'il figure dans les registres) -> hôpital, avec le libellé exact de l'outil.",
+  "telephones : 6 premiers chiffres d'un numéro (ex. 014981 pour 01 49 81 xx xx) -> hôpital."
+ ],
+ "personnes": {
+  "Emmanuelle Plaisier": "Hôpital Tenon (AP-HP)",
+  "Pierre Ronco": "Hôpital Tenon (AP-HP)"
+ },
+ "telephones": {
+  "014216": "Hôpital Pitié-Salpêtrière (AP-HP)",
+  "015841": "Hôpital Cochin (AP-HP)",
+  "014995": "Hôpital Lariboisière (AP-HP)"
+ }
+}

@@ -110,6 +110,7 @@ details summary{cursor:pointer;color:var(--link);font-weight:600;font-size:14px;
 .more{display:block;margin:18px auto 0;font:600 15px var(--f-body);color:var(--accent);background:var(--surface);border:1px solid var(--accent);border-radius:4px;padding:10px 20px;cursor:pointer}
 .empty{padding:30px 4px;color:var(--muted)}
 .report{margin-top:48px;display:grid;gap:16px;scroll-margin-top:16px}
+.guess{font-size:13px;color:var(--muted);font-style:italic}
 .rep-intro{display:grid;gap:6px;border-top:3px solid var(--lime);padding-top:14px}
 .rep-intro h2{font:700 22px var(--f-display);color:var(--accent);margin:0}
 .rep-intro p{margin:0;color:var(--muted);max-width:75ch}
@@ -406,7 +407,7 @@ function contactsHtml(list){
 }
 function siteHtml(c){
   const dist = ctx.loc && c.la != null ? ` · ${fmt(Math.round(km(ctx.loc, c)))} km` : "";
-  return `<li class="site"><div class="h"><span class="pill s-${c.s.replace(/\s/g,"")}">${esc(c.s)}</span><b>${esc(c.e || c.f || "Centre non nommé")}</b><span class="city">${esc(c.v)} (${c.p})${dist}</span></div>${c.e && c.f && c.f !== c.e ? `<div class="svc">${esc([c.f, ...(c.svc||[])].join(" · "))}</div>` : ""}${contactsHtml(c.k)}</li>`;
+  return `<li class="site"><div class="h"><span class="pill s-${c.s.replace(/\s/g,"")}">${esc(c.s)}</span><b>${esc(c.e || c.f || "Centre non nommé")}</b><span class="city">${esc(c.v)} (${c.p})${dist}</span>${c.devine ? `<span class="guess" title="Le registre indique seulement « AP-HP » : l'hôpital est déduit du contact (investigateur ou téléphone).">site déduit du contact</span>` : ""}</div>${c.e && c.f && c.f !== c.e ? `<div class="svc">${esc([c.f, ...(c.svc||[])].join(" · "))}</div>` : ""}${contactsHtml(c.k)}</li>`;
 }
 function card(d){
   let sites = d.ce.slice();
