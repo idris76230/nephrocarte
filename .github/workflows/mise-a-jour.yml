@@ -39,6 +39,8 @@ jobs:
 
       - name: Collecte et construction
         run: ./run_all.sh
+        env:
+          NECKER_MDP: ${{ secrets.NECKER_MDP }}   # site des ARC de néphrologie Necker (protégé) ; absent : dernière version gardée
 
       - name: Enregistrer les données mises à jour
         run: |

@@ -1,5 +1,6 @@
 """Pages « essais cliniques » publiées par les centres -> sources locales (data/local/<site>.json, format décrit dans local_merge.py).
-Sites : Cliniques universitaires Saint-Luc (Bruxelles), UZ Leuven (néphrologie), CHU de Saint-Étienne.
+Sites : Cliniques universitaires Saint-Luc (Bruxelles), UZ Leuven (néphrologie), CHU de Saint-Étienne,
+néphrologie adulte de Necker (site protégé : mot de passe dans la variable d'environnement NECKER_MDP).
 Le NCT est repris de la page quand il y figure, sinon cherché sur ClinicalTrials.gov (n° de protocole, puis acronyme) ;
 les correspondances trouvées sont gardées en cache (data/raw/sites_nct.json).
 Usage : python3 sites.py data/local [saintluc uzleuven stetienne]
@@ -225,7 +226,81 @@ def stetienne():
                        "match": r"[eé]tienne|bellevue|chuse|priest", "k": []},
             "projects": projects}
 
-SITES = {"saintluc": saintluc, "uzleuven": uzleuven, "stetienne": stetienne}
+# ---------------- Néphrologie Necker (AP-HP), site des ARC protégé par mot de passe ----------------
+# Le mot de passe n'est jamais écrit dans le dépôt : variable d'environnement NECKER_MDP (secret GitHub du même nom).
+# Les fiches n'ont pas de NCT : table ci-dessous (vérifiée à la main), sinon recherche par n° de protocole / acronyme.
+NECKER_NCT = {"anchor": "NCT06902558", "action-3": "NCT05183646", "alexion": "NCT06291376", "alpestria": "NCT06425055",
+              "amplitude": "NCT05312879", "apparent": "NCT05755386", "appreciate": "NCT05935215", "beyond": "NCT05852938",
+              "dni-sni": "NCT06820866", "efflavis": "NCT05489120", "1434-0017": "NCT07220083", "1434-0027": "NCT07355296",
+              "apl2-fsg-319": "NCT07213960", "assess": "NCT07211685", "bhv1400-301": "NCT07642050", "cryobi": "NCT07268521",
+              "exact": "NCT07523581", "horizon-maze": "NCT06830629", "lumina-iga": "NCT07850752", "matrix-cohort": "NCT05991245",
+              "pioneer": "NCT06983028", "prism-c3": "NCT07746895", "rainier": "NCT06564142", "renato": "NCT05946564",
+              "resigan": "NCT06926244", "result": "NCT06500702", "rifireins": "NCT03970577", "think": "NCT05732727",
+              "vasco": "NCT04413331", "vx24-kdo-901": "NCT06747572", "hydro-protect": "NCT05373264", "hypershu": "NCT05726916",
+              "ihmn": "NCT04326218", "biobanque-sni": "NCT04174066", "iritux": "NCT06341205", "maple": "NCT06734234", "obilup": "NCT04702256", "pacific": "NCT06742723"}
+NECKER_SP = {"comsign": "Assistance Publique - Hôpitaux de Paris",
+             "ccyx082a12301": "Novartis"}
+
+def necker():
+    import http.cookiejar
+    base = "https://www.nephrologie-necker.fr"
+    pwd = os.environ.get("NECKER_MDP")
+    if not pwd: raise ValueError("mot de passe absent (variable NECKER_MDP)")
+    op = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    op.addheaders = list(UA.items())
+    op.open(base + "/", timeout=60).read()
+    op.open(urllib.request.Request(base + "/page/password/submit", data=urllib.parse.urlencode({"segmentPassword": pwd, "submit": ""}).encode()), timeout=60).read()
+    fetch = lambda u: op.open(base + u, timeout=60).read().decode("utf-8", "ignore")
+    # index : liste des études, recherche par pathologie, puis pages alphabétiques (/a, /jkl, /etudes-cliniques/m…)
+    INDEX = r"^/([a-o]|jkl|pq|etudes-cliniques/(1-9|[a-z]+))$"
+    links, todo, done = set(), ["/etudes-cliniques", "/recherche-par-pathologie"], set()
+    while todo:
+        idx = todo.pop(); done.add(idx)
+        page = html.unescape(fetch(idx))
+        if "Mot de passe requis" in page: raise ValueError("mot de passe refusé")
+        for u in re.findall(r'href="(/[^"#]+)"', page):
+            if re.match(INDEX, u):
+                if u not in done and u not in todo: todo.append(u)
+            elif u.count("/") == 3 or not re.match(r"^/(etudes-cliniques|bpc|planning|questionnaire|recherche-par|accueil)", u):
+                links.add(u)
+    projects, seen = [], set()
+    for u in sorted(links):
+        try: page = fetch(u)
+        except Exception: continue
+        can = (re.search(r'rel="canonical" href="([^"]+)"', page) or [None, ""])[1]
+        slug = can.rstrip("/").split("/")[-1]
+        if not can or can in seen or "/etudes-cliniques/" not in can: continue
+        seen.add(can)
+        main = (re.search(r"<main.*?</main>", page, re.S) or [page])[0]
+        lines = [l.strip(" »") for l in text(main).split("\n") if l.strip(" »")]
+        if "Etudes cliniques" not in lines: continue
+        lines = lines[lines.index("Etudes cliniques") + 1:]
+        ac, body = lines[0], "\n".join(lines[1:])
+        head = " ".join(lines[1:5])
+        inv = re.search(r"Investigat\w* ?(?:principal )?: *(?:Pr|Dr)?\.? *([^\n]+)", body)
+        k = [{"n": person(inv.group(1)), "r": "Investigateur principal"}] if inv else []
+        # statut au centre, annoncé en tête de fiche ; une cohorte fermée n'est pas l'étude fermée
+        if re.search(r"ferm[ée]e? aux inclusions|inclusions termin|clôtur|fin des inclusions|arr[êe]t des inclusions|[ée]tude termin|[ée]tude ferm[ée]e?\b|suspendue", head, re.I):
+            s = "Fermé"
+        elif re.search(r"en pr[ée]paration", head, re.I): s = "À venir"
+        else: s = "Ouvert"
+        # classement sur le début des critères d'inclusion (les critères d'exclusion citent toutes les néphropathies)
+        incl = body.split("Critères d'exclusion")[0][:500]
+        th, pa = classify(ac + " " + incl)
+        nct = NECKER_NCT.get(slug) or find_nct(ac if re.search(r"\d", ac) else "", ac, "France", "Paris", NECKER_SP.get(slug, ""))
+        projects.append({"ac": ac, "sp": NECKER_SP.get(slug, ""), "nct": nct, "url": can, "th": th, "pa": pa, "k": k, "s": s,
+                         "obs": obs(ac)})
+    # « Pr Knebelmann » -> nom complet donné sur une autre fiche
+    full = {n.split()[-1].lower(): n for p in projects for n in [k["n"] for k in p["k"]] if " " in n}
+    for p in projects:
+        for k in p["k"]:
+            if " " not in k["n"]: k["n"] = full.get(k["n"].lower(), k["n"])
+    return {"source": "Néphrologie Necker — études cliniques (site des ARC)", "source_url": base,
+            "centre": {"f": "Hôpital Necker-Enfants malades (AP-HP) — Néphrologie adulte", "v": "Paris & IDF", "p": "FR", "z": "75015",
+                       "match": r"^(?!.*p[ée]diatr).*necker", "k": []},
+            "projects": projects}
+
+SITES = {"saintluc": saintluc, "uzleuven": uzleuven, "stetienne": stetienne, "necker": necker}
 known = {}
 for name in (sys.argv[2:] or SITES):
     try:

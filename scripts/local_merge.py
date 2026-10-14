@@ -2,7 +2,8 @@
 - étude déjà connue (même NCT) : le centre local est ajouté ou passé « Ouvert », la présentation en français et le financement sont repris ;
 - étude inconnue : ajoutée à partir de la fiche locale (et de ClinicalTrials.gov si un NCT est donné), sauf si le registre la dit terminée.
 Sans NCT, l'étude est reconnue par son acronyme s'il est sans ambiguïté (une seule étude, même promoteur).
-Format d'une source : {"source", "source_url", "centre": {f, v, p, z, k, match?}, "projects": [{ac, long?, pres?, pop?, obj?, fin?, sp, nct, url, th, pa, obs, k?}]}
+Format d'une source : {"source", "source_url", "centre": {f, v, p, z, k, match?}, "projects": [{ac, long?, pres?, pop?, obj?, fin?, sp, nct, url, th, pa, obs, k?, s?}]}
+  s d'un projet : statut au centre quand la source le donne (« Ouvert » par défaut, « Fermé », « À venir ») ;
   centre.match : motif identifiant le centre parmi les sites de la même ville (indispensable dans une ville à plusieurs hôpitaux) ;
   k d'un projet : contacts propres à l'étude (investigateur, coordinateur), sinon ceux du centre.
 Usage : python3 local_merge.py app/data.json data/local app/data.json
@@ -63,7 +64,8 @@ for f in sorted(glob.glob(os.path.join(sys.argv[2], "*.json"))):
     centre.update(s="Ouvert", la=la, lo=lo)
     label = src["source"].split(" — ")[0]
     for r in src["projects"]:
-        cen = dict(centre, k=r.get("k") or centre["k"])
+        ls = r.get("s", "Ouvert")
+        cen = dict(centre, k=r.get("k") or centre["k"], s=ls)
         fund = funding(r.get("fin"), r.get("sp"))
         fr = " ".join(x for x in [r.get("pres", ""), ("Population : " + r["pop"]) if r.get("pop") else "",
                                   ("Objectif : " + r["obj"]) if r.get("obj") else ""] if x)
@@ -73,25 +75,26 @@ for f in sorted(glob.glob(os.path.join(sys.argv[2], "*.json"))):
             here = [c for c in d["ce"] if c["v"] == centre["v"] and (not match or re.search(match, c.get("f", "") + " " + c.get("e", ""), re.I))]
             if here:
                 for c in here:
-                    if c["s"] in ("À venir", "Non précisé", "À confirmer"): c["s"] = "Ouvert"
+                    if ls != "Ouvert" or c["s"] in ("À venir", "Non précisé", "À confirmer"): c["s"] = ls
                     c["k"] = c["k"] + [k for k in cen["k"] if norm(k.get("n")) not in [norm(x.get("n")) for x in c["k"]]]
             else:
                 d["ce"].append(dict(cen))
             if fund and d["fund"] != "Industriel": d["fund"] = fund
-            if d["st"] == "À confirmer": d["st"], d["upd"] = "Ouvert", ""  # la page du service confirme l'étude
+            if d["st"] == "À confirmer" and ls == "Ouvert": d["st"], d["upd"] = "Ouvert", ""  # la page du service confirme l'étude
             if d["st"] in ("À venir", "Fermé") and not here: pass  # on ne contredit pas le registre au niveau de l'étude
             d.setdefault("loc", []).append({"src": label, "url": r["url"]})
             d["fr"] = d.get("fr") or fr
             if not d["ac"]: d["ac"] = r["ac"]
             continue
-        # étude absente : fiche locale, complétée par ClinicalTrials.gov si possible
+        # étude absente : fiche locale, complétée par ClinicalTrials.gov si possible ; fermée au centre : pas ajoutée
+        if ls == "Fermé": skipped.append(f"{r['ac']} (fermée au centre)"); continue
         s = ctgov(r["nct"]) if r.get("nct") else None
         if s and s["statusModule"]["overallStatus"] in ("COMPLETED", "TERMINATED", "WITHDRAWN"):
             skipped.append(f"{r['ac']} ({r['nct']})"); continue
         title = r.get("long") or r.get("pres") or r["ac"]
         cat = "Observationnel / cohorte" if r["obs"] else "Interventionnel"
-        sp = r.get("sp", "")
-        ph, ped, n, st = "", False, None, "Ouvert"
+        sp = r.get("sp", "") or (s or {}).get("sponsorCollaboratorsModule", {}).get("leadSponsor", {}).get("name", "")
+        ph, ped, n, st = "", False, None, ls
         th, pa = r["th"], r["pa"]
         if s:
             title = title if (r.get("long") or r.get("pres")) else s["identificationModule"].get("briefTitle", title)
@@ -115,10 +118,10 @@ for f in sorted(glob.glob(os.path.join(sys.argv[2], "*.json"))):
         data.append({"id": r.get("nct") or r["url"], "nct": r.get("nct", ""), "eu": [], "ac": r["ac"], "t": title,
                      "st": st, "cat": cat, "fund": "Industriel" if industry else (fund or "Académique (autre)"),
                      "th": th, "pa": pa, "ph": ph, "sp": sp, "ped": ped, "n": n, "start": "", "sum": "", "fr": fr,
-                     "cc": [], "ce": [dict(cen, s=st)], "src": label, "loc": [{"src": label, "url": r["url"]}]})
+                     "cc": [], "ce": [dict(cen, s=st if ls == "Ouvert" else ls)], "src": label, "loc": [{"src": label, "url": r["url"]}]})
         added += 1
         if r.get("nct"): by_nct[r["nct"]] = data[-1]
         if len(norm(r["ac"])) >= 4: by_ac.setdefault(norm(r["ac"]), []).append(data[-1])
 json.dump(data, open(sys.argv[3], "w"), ensure_ascii=False, separators=(",", ":"))
 print(f"sources locales : {updated} études complétées, {added} ajoutées -> {len(data)} études"
-      + (f" ; terminées selon ClinicalTrials.gov, non ajoutées : {', '.join(skipped)}" if skipped else ""))
+      + (f" ; non ajoutées (terminées selon ClinicalTrials.gov ou fermées au centre) : {', '.join(skipped)}" if skipped else ""))

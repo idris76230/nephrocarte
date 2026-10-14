@@ -1,0 +1,820 @@
+{
+ "source": "Néphrologie Necker — études cliniques (site des ARC)",
+ "source_url": "https://www.nephrologie-necker.fr",
+ "centre": {
+  "f": "Hôpital Necker-Enfants malades (AP-HP) — Néphrologie adulte",
+  "v": "Paris & IDF",
+  "p": "FR",
+  "z": "75015",
+  "match": "^(?!.*p[ée]diatr).*necker",
+  "k": []
+ },
+ "projects": [
+  {
+   "ac": "Anchor",
+   "sp": "",
+   "nct": "NCT06902558",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/anchor",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Action 3",
+   "sp": "",
+   "nct": "NCT05183646",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/action-3",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Alexion",
+   "sp": "",
+   "nct": "NCT06291376",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/alexion",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Alpestria",
+   "sp": "",
+   "nct": "NCT06425055",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/alpestria",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Amplitude",
+   "sp": "",
+   "nct": "NCT05312879",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/amplitude",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal",
+    "Maladies rénales rares / génétiques",
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Apparent",
+   "sp": "",
+   "nct": "NCT05755386",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/apparent",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Appreciate",
+   "sp": "",
+   "nct": "NCT05935215",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/appreciate",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "Insuffisance rénale aiguë"
+   ],
+   "pa": [
+    "MAT / SHU"
+   ],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Beyond",
+   "sp": "",
+   "nct": "NCT05852938",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/b/beyond",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Biobanque SNI",
+   "sp": "",
+   "nct": "NCT04174066",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/b/biobanque-sni",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": true
+  },
+  {
+   "ac": "DNI-SNI",
+   "sp": "",
+   "nct": "NCT06820866",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/d/dni-sni",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "k": [
+    {
+     "n": "Aurélie Hummel",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Efflavis",
+   "sp": "",
+   "nct": "NCT05489120",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/e/efflavis",
+   "th": [
+    "Dialyse / suppléance",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Complications du dialysé (prurit, CV, nutrition…)",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Elsa Ferriere",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "1434-0017",
+   "sp": "",
+   "nct": "NCT07220083",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/1-9/1434-0017",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "1434-0027",
+   "sp": "",
+   "nct": "NCT07355296",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/1-9/1434-0027",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal",
+    "Transplantation"
+   ],
+   "pa": [
+    "Immunosuppression / tolérance",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "APL2-FSG-319",
+   "sp": "",
+   "nct": "NCT07213960",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/apl2-fsg-319",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Idris Boudhabhay",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "À venir",
+   "obs": false
+  },
+  {
+   "ac": "Assess",
+   "sp": "",
+   "nct": "NCT07211685",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/a/assess",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "BHV1400-301",
+   "sp": "",
+   "nct": "NCT07642050",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/b/bhv1400-301",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "À venir",
+   "obs": false
+  },
+  {
+   "ac": "CCYX082A12301",
+   "sp": "Novartis",
+   "nct": "",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/c/ccyx082a12301",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "À venir",
+   "obs": false
+  },
+  {
+   "ac": "COMSIGN",
+   "sp": "Assistance Publique - Hôpitaux de Paris",
+   "nct": "",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/c/comsign",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "Transplantation"
+   ],
+   "pa": [
+    "Glomérulopathie à C3",
+    "Immunosuppression / tolérance"
+   ],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Cryobi",
+   "sp": "",
+   "nct": "NCT07268521",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/c/cryobi",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Vascularites à ANCA"
+   ],
+   "k": [
+    {
+     "n": "Aurélie Hummel",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Exact",
+   "sp": "",
+   "nct": "NCT07523581",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/e/exact",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "À venir",
+   "obs": false
+  },
+  {
+   "ac": "Horizon Maze",
+   "sp": "",
+   "nct": "NCT06830629",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/h/horizon-maze",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Lumina IgA",
+   "sp": "",
+   "nct": "NCT07850752",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/jkl/lumina-iga",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "À venir",
+   "obs": false
+  },
+  {
+   "ac": "MATRIX cohort",
+   "sp": "",
+   "nct": "NCT05991245",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/m/matrix-cohort",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": true
+  },
+  {
+   "ac": "Pioneer",
+   "sp": "",
+   "nct": "NCT06983028",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/pq/pioneer",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HTA / cardio-rénal",
+    "Néphropathie à IgA",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "PRISM-C3",
+   "sp": "",
+   "nct": "NCT07746895",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/pq/prism-c3",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulopathie à C3"
+   ],
+   "k": [
+    {
+     "n": "Aude Servais",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Rainier",
+   "sp": "",
+   "nct": "NCT06564142",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/r/rainier",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Renato",
+   "sp": "",
+   "nct": "NCT05946564",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/r/renato",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC",
+    "Vascularites à ANCA"
+   ],
+   "k": [
+    {
+     "n": "Aurélie Hummel",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Resigan",
+   "sp": "",
+   "nct": "NCT06926244",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/r/resigan",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie à IgA"
+   ],
+   "k": [
+    {
+     "n": "Aurélie Hummel",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Result",
+   "sp": "",
+   "nct": "NCT06500702",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/r/result",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Myriam Dao",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Rifireins",
+   "sp": "",
+   "nct": "NCT03970577",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/r/rifireins",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Think",
+   "sp": "",
+   "nct": "NCT05732727",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/t/think",
+   "th": [
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Dominique Joly",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Vasco",
+   "sp": "",
+   "nct": "NCT04413331",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/v/vasco",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "VX24-KDO-901",
+   "sp": "",
+   "nct": "NCT06747572",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/v/vx24-kdo-901",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Hydro-protect",
+   "sp": "",
+   "nct": "NCT05373264",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/h/hydro-protect",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "HyperSHU",
+   "sp": "",
+   "nct": "NCT05726916",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/h/hypershu",
+   "th": [
+    "Dialyse / suppléance",
+    "Glomérulopathies / néphropathies immunes",
+    "Insuffisance rénale aiguë",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "Anémie",
+    "HTA / cardio-rénal",
+    "MAT / SHU"
+   ],
+   "k": [
+    {
+     "n": "Aurélie Hummel",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "IHMN",
+   "sp": "",
+   "nct": "NCT04326218",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/i/ihmn",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Glomérulonéphrite extramembraneuse"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "iRitux",
+   "sp": "",
+   "nct": "NCT06341205",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/i/iritux",
+   "th": [
+    "Glomérulopathies / néphropathies immunes",
+    "MRC / néphroprotection / cardio-rénal"
+   ],
+   "pa": [
+    "HSF / syndrome néphrotique",
+    "Progression de la MRC"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Maple",
+   "sp": "",
+   "nct": "NCT06734234",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/m/maple",
+   "th": [
+    "Maladies rénales rares / génétiques"
+   ],
+   "pa": [
+    "Polykystose (PKD)"
+   ],
+   "k": [
+    {
+     "n": "Bertrand Knebelmann",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Fermé",
+   "obs": false
+  },
+  {
+   "ac": "Obilup",
+   "sp": "",
+   "nct": "NCT04702256",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/o/obilup",
+   "th": [
+    "Glomérulopathies / néphropathies immunes"
+   ],
+   "pa": [
+    "Néphropathie lupique"
+   ],
+   "k": [
+    {
+     "n": "Aurélie Hummel",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  },
+  {
+   "ac": "Pacific",
+   "sp": "",
+   "nct": "NCT06742723",
+   "url": "https://www.nephrologie-necker.fr/etudes-cliniques/pq/pacific",
+   "th": [
+    "Autre néphrologie"
+   ],
+   "pa": [],
+   "k": [
+    {
+     "n": "Dominique Joly",
+     "r": "Investigateur principal"
+    }
+   ],
+   "s": "Ouvert",
+   "obs": false
+  }
+ ]
+}
