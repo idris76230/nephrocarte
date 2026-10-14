@@ -18,7 +18,51 @@
         "etablissement": "Hôpital européen Georges-Pompidou (AP-HP)",
         "ville": "Paris & IDF",
         "statut": "Ouvert",
-        "contacts": [{"nom": "Pr Sophie Chauvet", "role": "Investigatrice coordonnatrice"}]
+        "contacts": [
+          {
+            "nom": "Pr Sophie Chauvet",
+            "role": "Investigatrice coordonnatrice"
+          }
+        ]
+      }
+    },
+    {
+      "etude": "NCT04413331",
+      "date": "2026-10-14",
+      "source": "Commission clinique SFNDT",
+      "centre": {
+        "etablissement": "Hôpital Cochin (AP-HP)",
+        "ville": "Paris & IDF",
+        "statut": "Ouvert",
+        "contacts": [
+          {
+            "nom": "Pr Benjamin Terrier",
+            "role": "Investigateur coordonnateur",
+            "email": "benjamin.terrier@aphp.fr"
+          }
+        ]
+      }
+    },
+    {
+      "etude": "NCT04413331",
+      "date": "2026-10-14",
+      "source": "Commission clinique SFNDT",
+      "centre": {
+        "etablissement": "Hôpital Necker-Enfants malades (AP-HP)",
+        "ville": "Paris & IDF",
+        "statut": "Ouvert",
+        "contacts": [
+          {
+            "nom": "Dr Idris Boudhabhay",
+            "role": "Contact",
+            "email": "idris.boudhabhay@aphp.fr"
+          },
+          {
+            "nom": "Dr Aurélie Hummel",
+            "role": "Contact",
+            "email": "aurelie.hummel@aphp.fr"
+          }
+        ]
       }
     }
   ]
