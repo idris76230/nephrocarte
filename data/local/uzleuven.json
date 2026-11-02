@@ -46,20 +46,6 @@
    "obs": false
   },
   {
-   "ac": "APERTURE",
-   "long": "Een studie naar de prevalentie en klinische kenmerken geassocieerd met PKD1-genvariantgroepen bij autosomaal dominante polycystische nierziekte (ADPKD).",
-   "sp": "Vertex",
-   "nct": "",
-   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/adpkd",
-   "th": [
-    "Maladies rénales rares / génétiques"
-   ],
-   "pa": [
-    "Polykystose (PKD)"
-   ],
-   "obs": true
-  },
-  {
    "ac": "MAPLE",
    "long": "Een gerandomiseerde, dubbelblinde, placebo-gecontroleerde fase 1a/1b-studie met enkelvoudige dosis ter evaluatie van de veiligheid, verdraagbaarheid, farmacokinetiek en farmacodynamiek van GSK4771261 bij gezonde vrijwilligers en patiënten met autosomaal dominante polycystische nierziekte.",
    "sp": "GSK",
@@ -88,19 +74,6 @@
    "obs": false
   },
   {
-   "ac": "AMPLITUDE",
-   "long": "Een adaptieve, dubbelblinde, placebo‑gecontroleerde fase 2/3‑studie ter evaluatie van de werkzaamheid en veiligheid van VX‑147 bij volwassen en pediatrische patiënten met APOL1‑gemedieerde proteïnurie.",
-   "sp": "Vertex",
-   "nct": "NCT05312879",
-   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
-   "th": [
-    "MRC / néphroprotection / cardio-rénal",
-    "Maladies rénales rares / génétiques"
-   ],
-   "pa": [],
-   "obs": false
-  },
-  {
    "ac": "RENAL LIFE CYCLO",
    "long": "De RENAL LIFECYCLE-studie: een fase III, dubbelblinde, placebo-gecontroleerde studie naar het effect van dapagliflozine op nier- en hartfalen bij patiënten met ernstige chronische nierziekte.",
    "sp": "University Medical Center Groningen",
@@ -110,18 +83,6 @@
     "Dialyse / suppléance",
     "MRC / néphroprotection / cardio-rénal",
     "Transplantation"
-   ],
-   "pa": [],
-   "obs": false
-  },
-  {
-   "ac": "SYNC-EASY",
-   "long": "Een fase II, gerandomiseerde, dubbelblinde, multicenterstudie naar de veiligheid en werkzaamheid van vicadrostat in combinatie met empagliflozine bij patiënten met chronische nierziekte met risico op ziekteprogressie.",
-   "sp": "Boehringer",
-   "nct": "",
-   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/chronische-nierziekten",
-   "th": [
-    "MRC / néphroprotection / cardio-rénal"
    ],
    "pa": [],
    "obs": false
@@ -228,18 +189,6 @@
    "obs": false
   },
   {
-   "ac": "Pilot‑OMAGOD",
-   "long": "Pilot‑OMAGOD: een multicenter, gerandomiseerde, enkelblinde cross‑overstudie naar het effect van aanpassing van de magnesiumconcentratie in citraatgebaseerd dialysaat op serum‑magnesium bij hemodialysepatiënten.",
-   "sp": "",
-   "nct": "NCT07206524",
-   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/nierdialyse",
-   "th": [
-    "Dialyse / suppléance"
-   ],
-   "pa": [],
-   "obs": false
-  },
-  {
    "ac": "SODIAH",
    "long": "SODIAH (HD‑NaM‑01‑EU): een multicenter, gerandomiseerde studie naar het effect van geïndividualiseerd natriumbeheer ten opzichte van standaardbehandeling bij hemodialysepatiënten.",
    "sp": "Fresenius",
@@ -277,20 +226,6 @@
    "pa": [
     "Donneur / préservation du greffon",
     "Immunosuppression / tolérance"
-   ],
-   "obs": false
-  },
-  {
-   "ac": "MARIBEL",
-   "long": "Real‑world gebruik van maribavir bij post‑transplantatie CMV‑infectie",
-   "sp": "Takeda",
-   "nct": "NCT06677892",
-   "url": "https://www.uzleuven.be/nl/nefrologie/klinische-studies/niertransplantatie",
-   "th": [
-    "Transplantation"
-   ],
-   "pa": [
-    "Infections post-greffe"
    ],
    "obs": false
   },
